@@ -1,1 +1,4 @@
 venvs/
+build/
+install/
+log/

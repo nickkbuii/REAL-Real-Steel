@@ -234,6 +234,8 @@ class ArucoNode(rclpy.node.Node):
             goal_markers = []
             final_marker_ids = []
             for i, marker_id in enumerate(marker_ids):
+                if marker_id[0] not in self.marker_size_map:
+                    continue
                 marker_size = self.marker_size_map[marker_id[0]]
                 if marker_size == 0.05:
                     turtlebot_corners.append(corners[i])
