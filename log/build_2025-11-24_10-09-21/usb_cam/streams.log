@@ -1,0 +1,70 @@
+[0.298s] Invoking command in '/home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/build/usb_cam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble VIRTUAL_ENV_PROMPT=(turtlebot) /usr/bin/cmake --build /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/build/usb_cam -- -j32 -l32
+[0.399s] [35m[1mConsolidate compiler generated dependencies of target usb_cam[0m
+[0.402s] [35m[1mConsolidate compiler generated dependencies of target usb_cam_node_exe[0m
+[0.406s] [35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[0.407s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[0.458s] [ 50%] Built target gtest_main
+[0.458s] [ 50%] Built target usb_cam
+[0.458s] [ 50%] Built target gtest
+[0.460s] [ 57%] Built target usb_cam_node_exe
+[0.485s] [35m[1mConsolidate compiler generated dependencies of target test_pixel_formats[0m
+[0.486s] [35m[1mConsolidate compiler generated dependencies of target test_usb_cam_utils[0m
+[0.487s] [35m[1mConsolidate compiler generated dependencies of target usb_cam_node[0m
+[0.525s] [ 85%] Built target test_pixel_formats
+[0.526s] [ 92%] Built target test_usb_cam_utils
+[0.529s] [100%] Built target usb_cam_node
+[0.553s] Invoked command in '/home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble VIRTUAL_ENV_PROMPT=(turtlebot) /usr/bin/cmake --build /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/build/usb_cam -- -j32 -l32
+[0.575s] Invoking command in '/home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/build/usb_cam': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble VIRTUAL_ENV_PROMPT=(turtlebot) /usr/bin/cmake --install /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/build/usb_cam
+[0.590s] -- Install configuration: ""
+[0.593s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/usb_cam/environment/library_path.sh
+[0.594s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/usb_cam/environment/library_path.dsv
+[0.610s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/lib/usb_cam/usb_cam_node_exe
+[0.615s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/lib/usb_cam/show_image.py
+[0.665s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/lib/libusb_cam.so
+[0.711s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/lib/libusb_cam_node.so
+[0.714s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/include
+[0.716s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/include/usb_cam
+[0.718s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/include/usb_cam/constants.hpp
+[0.718s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/include/usb_cam/conversions.hpp
+[0.720s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/include/usb_cam/formats
+[0.721s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/include/usb_cam/formats/av_pixel_format_helper.hpp
+[0.723s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/include/usb_cam/formats/m420.hpp
+[0.723s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/include/usb_cam/formats/mjpeg.hpp
+[0.725s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/include/usb_cam/formats/mono.hpp
+[0.726s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/include/usb_cam/formats/pixel_format_base.hpp
+[0.727s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/include/usb_cam/formats/rgb.hpp
+[0.728s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/include/usb_cam/formats/utils.hpp
+[0.729s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/include/usb_cam/formats/uyvy.hpp
+[0.730s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/include/usb_cam/formats/yuyv.hpp
+[0.731s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/include/usb_cam/usb_cam.hpp
+[0.732s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/include/usb_cam/usb_cam_node.hpp
+[0.733s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/include/usb_cam/utils.hpp
+[0.736s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/lib/libusb_cam_node.so
+[0.744s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/usb_cam/launch
+[0.744s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/usb_cam/launch/__init__.py
+[0.745s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/usb_cam/launch/camera.launch.py
+[0.747s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/usb_cam/launch/camera_config.py
+[0.747s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/usb_cam/config
+[0.750s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/usb_cam/config/camera_info.yaml
+[0.751s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/usb_cam/config/params_1.yaml
+[0.753s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/usb_cam/config/params_2.yaml
+[0.755s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/ament_index/resource_index/package_run_dependencies/usb_cam
+[0.756s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/ament_index/resource_index/parent_prefix_path/usb_cam
+[0.758s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/usb_cam/environment/ament_prefix_path.sh
+[0.759s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/usb_cam/environment/ament_prefix_path.dsv
+[0.760s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/usb_cam/environment/path.sh
+[0.761s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/usb_cam/environment/path.dsv
+[0.762s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/usb_cam/local_setup.bash
+[0.763s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/usb_cam/local_setup.sh
+[0.763s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/usb_cam/local_setup.zsh
+[0.765s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/usb_cam/local_setup.dsv
+[0.767s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/usb_cam/package.dsv
+[0.774s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/ament_index/resource_index/packages/usb_cam
+[0.775s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/ament_index/resource_index/rclcpp_components/usb_cam
+[0.777s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_libraries-extras.cmake
+[0.778s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_dependencies-extras.cmake
+[0.779s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_include_directories-extras.cmake
+[0.780s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/usb_cam/cmake/usb_camConfig.cmake
+[0.780s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/usb_cam/cmake/usb_camConfig-version.cmake
+[0.782s] -- Up-to-date: /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/install/usb_cam/share/usb_cam/package.xml
+[0.788s] Invoked command in '/home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/build/usb_cam' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/turtlebot3_ws/install/turtlebot3_teleop:/opt/ros/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble VIRTUAL_ENV_PROMPT=(turtlebot) /usr/bin/cmake --install /home/cc/ee106a/fa25/class/ee106a-abh/REAL-Real-Steel/build/usb_cam
