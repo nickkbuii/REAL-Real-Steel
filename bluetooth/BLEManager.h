@@ -4,29 +4,28 @@
 #include <Arduino.h>
 
 /**
- * @brief Initialize BLE stack, service, and characteristic.
+ * @brief Initialize BLE services and start advertising.
  *
- * Creates a BLE server, service (UUID 0x180A), and a notify-capable
- * characteristic (UUID 0x2A57). Starts advertising automatically.
- *
- * @param deviceName Name of the BLE peripheral (e.g. "NanoESP32").
+ * @param deviceName  Name of the BLE peripheral.
+ * @return void
  */
 void initBLE(const char* deviceName = "NanoESP32");
 
 /**
- * @brief Send IMU data over BLE if a client is connected.
+ * @brief Send two quaternion measurements over BLE.
  *
- * Data is sent as a comma-separated ASCII string:
- * "ax,ay,az,gx,gy,gz" with 3 decimal places.
+ * @param uq0 Upper-arm quaternion w
+ * @param uq1 Upper-arm quaternion x
+ * @param uq2 Upper-arm quaternion y
+ * @param uq3 Upper-arm quaternion z
+ * @param fq0 Forearm quaternion w
+ * @param fq1 Forearm quaternion x
+ * @param fq2 Forearm quaternion y
+ * @param fq3 Forearm quaternion z
  *
- * @param ax Acceleration X [g or normalized].
- * @param ay Acceleration Y [g or normalized].
- * @param az Acceleration Z [g or normalized].
- * @param gx Angular rate X [deg/s or normalized].
- * @param gy Angular rate Y [deg/s or normalized].
- * @param gz Angular rate Z [deg/s or normalized].
+ * @return void
  */
-void updateBLE(float ax, float ay, float az,
-               float gx, float gy, float gz);
+void updateBLEQuats(float uq0, float uq1, float uq2, float uq3,
+                    float fq0, float fq1, float fq2, float fq3);
 
 #endif

@@ -1,5 +1,4 @@
 #include "BLEManager.h"
-
 #include <BLEDevice.h>
 #include <BLEServer.h>
 #include <BLEUtils.h>
@@ -9,9 +8,6 @@ namespace {
     BLECharacteristic* pCharacteristic = nullptr;
     bool deviceConnected = false;
 
-    /**
-     * @brief BLE server callbacks to track connection state.
-     */
     class ServerCallbacks : public BLEServerCallbacks {
       void onConnect(BLEServer* pServer) override {
         deviceConnected = true;
@@ -47,20 +43,20 @@ void initBLE(const char* deviceName) {
     BLEDevice::startAdvertising();
 }
 
-void updateBLE(float ax, float ay, float az,
-               float gx, float gy, float gz) {
-    if (!deviceConnected || pCharacteristic == nullptr) {
-        return;
-    }
+void updateBLEQuats(float uq0, float uq1, float uq2, float uq3,
+                    float fq0, float fq1, float fq2, float fq3) {
+    if (!deviceConnected || pCharacteristic == nullptr) return;
 
-    String imuString =
-        String(ax, 3) + "," +
-        String(ay, 3) + "," +
-        String(az, 3) + "," +
-        String(gx, 3) + "," +
-        String(gy, 3) + "," +
-        String(gz, 3);
+    String msg =
+        String(uq0, 6) + "," +
+        String(uq1, 6) + "," +
+        String(uq2, 6) + "," +
+        String(uq3, 6) + "," +
+        String(fq0, 6) + "," +
+        String(fq1, 6) + "," +
+        String(fq2, 6) + "," +
+        String(fq3, 6);
 
-    pCharacteristic->setValue(imuString.c_str());
+    pCharacteristic->setValue(msg.c_str());
     pCharacteristic->notify();
 }
