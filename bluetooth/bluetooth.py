@@ -4,7 +4,6 @@ from bleak import BleakScanner, BleakClient
 SERVICE_UUID = "180A"
 CHAR_UUID = "2A57"
 
-
 async def notification_handler(sender: int, data: bytes):
     """
     Handle incoming BLE IMU notifications.
@@ -12,19 +11,34 @@ async def notification_handler(sender: int, data: bytes):
     Parameters
     ----------
     sender : int
-        BLE handle that sent the notification.
+        BLE characteristic handle that sent the notification.
     data : bytes
-        Raw BLE payload in the format "ax,ay,az,gx,gy,gz".
+        Raw BLE payload in the format:
+        "uq0,uq1,uq2,uq3,fq0,fq1,fq2,fq3"
+        where:
+            uq* = shoulder IMU quaternion components (w, x, y, z)
+            fq* = forearm IMU quaternion components (w, x, y, z)
 
     Returns
     -------
     None
     """
-    imu_text = data.decode("utf-8")
+    imu_text = data.decode("utf-8").strip()
     print(f"Notification from {sender}: {imu_text}")
 
-    ax, ay, az, gx, gy, gz = map(float, imu_text.split(","))
-    print("Accel:", ax, ay, az, " Gyro:", gx, gy, gz)
+    parts = imu_text.split(",")
+    if len(parts) != 8:
+        print("Warning: Received malformed quaternion packet:", imu_text)
+        return
+
+    uq0, uq1, uq2, uq3, fq0, fq1, fq2, fq3 = map(float, parts)
+
+    shoulder_q = (uq0, uq1, uq2, uq3)
+    forearm_q  = (fq0, fq1, fq2, fq3)
+
+    print("Shoulder quat:", shoulder_q)
+    print("Forearm  quat:", forearm_q)
+
 
 
 async def main():
