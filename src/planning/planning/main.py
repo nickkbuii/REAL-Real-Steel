@@ -42,6 +42,9 @@ class UR7e_FollowPose(Node):
         
         self.job_queue = [] # Entries should be of type either JointState or String('toggle_grip')
 
+    def clamp(self, x, lower, upper):
+        return max(lower, min(upper, x))
+
     def extract_rotation_and_translation(self, transform):
         quat = [transform.rotation.x, 
                 transform.rotation.y,
@@ -56,15 +59,15 @@ class UR7e_FollowPose(Node):
 
         return rotation, translation, quat
     
-    def compute_transform_difference(self, trans1, trans2):
-        rot1, trans1, _ = self.extract_rotation_and_translation(trans1)
-        rot2, trans2, _ = self.extract_rotation_and_translation(trans2)
+    def compute_transform_difference(self, transform1, transform2):
+        rot1, t1, _ = self.extract_rotation_and_translation(transform1)
+        rot2, t2, _ = self.extract_rotation_and_translation(transform2)
         # translation
-        trans_err = np.linalg.norm(t2 - t1)
+        trans_err = np.linalg.norm(np.array(t1) - np.array(t2))
         # relative rotation
         rot_rel = rot1.T @ rot2
         # compute angle robustly
-        cos_theta = clamp((np.trace(rot_rel) - 1.0) / 2.0, -1.0, 1.0)
+        cos_theta = self.clamp((np.trace(rot_rel) - 1.0) / 2.0, -1.0, 1.0)
         theta = np.arccos(cos_theta)  # radians
         theta = np.degrees(theta)
         return trans_err, theta
@@ -73,12 +76,26 @@ class UR7e_FollowPose(Node):
         self.joint_state = msg
 
     def hand_callback(self, msg: Bool):
-        self.hand_changed = msg.val != self.current_hand
+        # self.hand_changed = msg.data != self.current_hand
+        self.hand_changed = False
+        ####### REMOVE LATER JUST FOR TESTING #######
+        # if self.hand_changed:
+        #     self.get_logger().info("Hand changed its clasp!")
+        #     self.job_queue.append("toggle_grip")
+        #     self.current_hand = not self.current_hand
+        #     self.execute_jobs()
+        #############################################
 
     def transform_callback(self, msg: TransformStamped):
-        trans_err, theta = self.compute_transform_different(self.current_transform, msg.transform)
+        if msg.transform is None:
+            return
+
+        if self.current_transform is None:
+            self.current_transform = msg.transform
+
+        trans_err, theta = self.compute_transform_difference(self.current_transform, msg.transform)
         if trans_err <= self.TRANS_THRESHOLD and theta <= self.THETA_THRESHOLD:
-            self.get_logger().info(f"Ttrans error: {trans_err}, Theta: {theta} -- Too similar to current pose!")
+            self.get_logger().info(f"Trans error: {trans_err}, Theta: {theta} -- Too similar to current pose!")
             return
 
         if self.joint_state is None:
@@ -101,7 +118,7 @@ class UR7e_FollowPose(Node):
     def execute_jobs(self):
         if not self.job_queue:
             self.get_logger().info("All jobs completed.")
-            rclpy.shutdown()
+            # rclpy.shutdown()
             return
 
         self.get_logger().info(f"Executing job queue, {len(self.job_queue)} jobs remaining.")
@@ -132,8 +149,8 @@ class UR7e_FollowPose(Node):
 
         req = Trigger.Request()
         future = self.gripper_cli.call_async(req)
-        # wait for 2 seconds
-        rclpy.spin_until_future_complete(self, future, timeout_sec=2.0)
+        # wait for 0.5 seconds
+        rclpy.spin_until_future_complete(self, future, timeout_sec=0.5)
 
         self.get_logger().info('Gripper toggled.')
         self.execute_jobs()  # Proceed to next job

@@ -134,8 +134,8 @@ class ArucoNode(rclpy.node.Node):
         )
         self.get_logger().info(f"Marker size: {self.marker_size}")
         
-        self.marker_size_map = {1: .05, 2: 0.05, 3: 0.05, 4: 0.05, 5: 0.05, 11: 0.05, 
-                                6: 0.15, 7: 0.15, 8: 0.15, 9: 0.15, 10: 0.15}
+        self.marker_size_map = {1: 0.15, 2: 0.05, 3: 0.05, 4: 0.05, 5: 0.05, 11: 0.05, 
+                                6: 0.15, 7: 0.15, 8: 0.15, 9: 0.15, 10: 0.05}
         self.get_logger().info(f"Marker size map for marker ids is: {self.marker_size_map}")
 
         dictionary_id_name = (
@@ -270,6 +270,8 @@ class ArucoNode(rclpy.node.Node):
                     turtlebot_rvecs, turtlebot_tvecs = cv2.aruco.estimatePoseSingleMarkers(
                         turtlebot_corners, turtlebot_markers, self.intrinsic_mat, self.distortion
                     )
+                self.get_logger().info(f"info is {turtlebot_rvecs}, {turtlebot_tvecs}")
+                self.get_logger().info(f"info is {turtlebot_markers}")
                 rvecs.extend(turtlebot_rvecs)
                 tvecs.extend(turtlebot_tvecs)
                 final_marker_ids.extend(turtlebot_markers)

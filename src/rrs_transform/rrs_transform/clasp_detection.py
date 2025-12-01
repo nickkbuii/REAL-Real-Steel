@@ -49,7 +49,8 @@ class HandStateNode(Node):
     def image_callback(self, msg):
         # Convert ROS Image → OpenCV (BGR)
         frame = self.bridge.imgmsg_to_cv2(msg, desired_encoding='bgr8')
-
+        if frame is None:
+            return
         # MediaPipe wants RGB
         rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         results = self.hands.process(rgb)

@@ -14,6 +14,9 @@ from tf2_ros import TransformException, LookupException, ConnectivityException, 
 class RRSTransformer(Node):
     def __init__(self, body_base_link_frame, body_tool_frame):
         super().__init__('rrs_transformer')
+        self.get_logger().info(
+            f"Creating RRS Transformer Node"
+        )
 
         self.body_base_link_frame = body_base_link_frame
         self.body_tool_frame = body_tool_frame
