@@ -24,7 +24,6 @@ async def notification_handler(sender: int, data: bytes):
     None
     """
     imu_text = data.decode("utf-8").strip()
-    print(f"Notification from {sender}: {imu_text}")
 
     parts = imu_text.split(",")
     if len(parts) != 8:

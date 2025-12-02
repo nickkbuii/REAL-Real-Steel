@@ -26,7 +26,6 @@ void setup() {
     bool okUpper   = imuUpper.begin(A4, A5);
     bool okForearm = imuForearm.begin(A4, A5);
 
-    Serial.println("Dual MPU6050 + Madgwick + BLE (ESP32)");
     Serial.printf("Upper IMU:   %s\n", okUpper   ? "OK" : "FAIL");
     Serial.printf("Forearm IMU: %s\n", okForearm ? "OK" : "FAIL");
 
