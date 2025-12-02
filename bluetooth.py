@@ -39,8 +39,6 @@ async def notification_handler(sender: int, data: bytes):
     print("Shoulder quat:", shoulder_q)
     print("Forearm  quat:", forearm_q)
 
-
-
 async def main():
     """
     Scan, connect, and subscribe to BLE IMU notifications.
