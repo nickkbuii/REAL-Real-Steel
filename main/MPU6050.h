@@ -22,8 +22,19 @@ public:
      */
     void readGyroDPS(float &gx, float &gy, float &gz);
 
+    /**
+     * @brief Calibration function to determine and set biases for accelerometer and gyroscope
+     */
+    void calibrate(int samples = 1000);
+
 private:
     uint8_t _addr;
+    float ax_bias = 0.0f;
+    float ay_bias = 0.0f;
+    float az_bias = 0.0f;
+    float gx_bias = 0.0f;
+    float gy_bias = 0.0f;
+    float gz_bias = 0.0f;
 };
 
 #endif
