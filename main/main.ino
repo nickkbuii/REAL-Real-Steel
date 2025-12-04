@@ -64,10 +64,10 @@ void loop() {
     Serial.print(" gy2:"); Serial.print(gy2);
     Serial.print(" gz2:"); Serial.println(gz2);
 
-    updateBLEIMU{
+    updateBLEIMU(
         ax1, ay1, az1, gx1, gy1, gz1,
         ax2, ay2, az2, gx2, gy2, gz2
-    }
+    );
 
     delay(20);
 }

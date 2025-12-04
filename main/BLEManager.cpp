@@ -41,7 +41,7 @@ bool initBLE(const char* deviceName) {
     BLEAdvertising* pAdvertising = BLEDevice::getAdvertising();
     pAdvertising->addServiceUUID("180A");
     BLEDevice::startAdvertising();
-    return true
+    return true;
 }
 
 void updateBLEIMU(float ax1, float ay1, float az1,
