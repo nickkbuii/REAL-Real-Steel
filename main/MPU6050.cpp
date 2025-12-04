@@ -60,6 +60,26 @@ void MPU6050::readGyroDPS(float &gx, float &gy, float &gz) {
     gz = (static_cast<float>(rz) - gz_bias) / GYR_SENS;
 }
 
+void MPU6050::readAccelms2(float &ax, float &ay, float &az) {
+    float ax_g, ay_g, az_g;
+    readAccelG(ax_g, ay_g, az_g);
+
+    constexpr float G = 9.80665f;
+    ax = ax_g * G;
+    ay = ay_g * G;
+    az = az_g * G;
+}
+
+void MPU6050::readGyroRads(float &gx, float &gy, float &gz) {
+    float gx_dps, gy_dps, gz_dps;
+    readGyroDPS(gx_dps, gy_dps, gz_dps);
+
+    constexpr float DEG2RAD = 0.017453292519943295f;
+    gx = gx_dps * DEG2RAD;
+    gy = gy_dps * DEG2RAD;
+    gz = gz_dps * DEG2RAD;
+}
+
 void MPU6050::calibrate(int samples) {
     int32_t ax_sum = 0, ay_sum = 0, az_sum = 0;
     int32_t gx_sum = 0, gy_sum = 0, gz_sum = 0;

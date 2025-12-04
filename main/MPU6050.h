@@ -23,6 +23,17 @@ public:
     void readGyroDPS(float &gx, float &gy, float &gz);
 
     /**
+     * @brief Read accelerometer values scaled to m/s²
+     */
+    void readAccelms2(float &ax, float &ay, float &az);
+
+    /**
+     * @brief Read gyroscope values scaled to rad/s
+     */
+    void readGyroRads(float &gx, float &gy, float &gz);
+
+
+    /**
      * @brief Calibration function to determine and set biases for accelerometer and gyroscope
      */
     void calibrate(int samples = 1000);

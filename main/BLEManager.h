@@ -4,28 +4,26 @@
 #include <Arduino.h>
 
 /**
- * @brief Initialize BLE services and start advertising.
+ * @brief Initialize BLE with the given device name.
  *
- * @param deviceName  Name of the BLE peripheral.
- * @return void
+ * @param deviceName The name of the BLE device (default: "NanoESP32").
+ * @return true if initialization was successful, false otherwise.
  */
-void initBLE(const char* deviceName = "NanoESP32");
+bool initBLE(const char* deviceName = "NanoESP32");
 
 /**
- * @brief Send two quaternion measurements over BLE.
+ * @brief Send two IMU measurements over BLE.
  *
- * @param uq0 Upper-arm quaternion w
- * @param uq1 Upper-arm quaternion x
- * @param uq2 Upper-arm quaternion y
- * @param uq3 Upper-arm quaternion z
- * @param fq0 Forearm quaternion w
- * @param fq1 Forearm quaternion x
- * @param fq2 Forearm quaternion y
- * @param fq3 Forearm quaternion z
+ * Payload format (CSV, UTF-8):
+ *   ax1,ay1,az1,gx1,gy1,gz1,ax2,ay2,az2,gx2,gy2,gz2
  *
- * @return void
+ * Units:
+ *   accel: m/s^2
+ *   gyro:  rad/s
  */
-void updateBLEQuats(float uq0, float uq1, float uq2, float uq3,
-                    float fq0, float fq1, float fq2, float fq3);
+void updateBLEIMU(float ax1, float ay1, float az1,
+                  float gx1, float gy1, float gz1,
+                  float ax2, float ay2, float az2,
+                  float gx2, float gy2, float gz2);
 
 #endif

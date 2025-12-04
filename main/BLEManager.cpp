@@ -19,7 +19,7 @@ namespace {
     };
 }
 
-void initBLE(const char* deviceName) {
+bool initBLE(const char* deviceName) {
     BLEDevice::init(deviceName);
 
     BLEServer* pServer = BLEDevice::createServer();
@@ -41,21 +41,28 @@ void initBLE(const char* deviceName) {
     BLEAdvertising* pAdvertising = BLEDevice::getAdvertising();
     pAdvertising->addServiceUUID("180A");
     BLEDevice::startAdvertising();
+    return true
 }
 
-void updateBLEQuats(float uq0, float uq1, float uq2, float uq3,
-                    float fq0, float fq1, float fq2, float fq3) {
+void updateBLEIMU(float ax1, float ay1, float az1,
+                  float gx1, float gy1, float gz1,
+                  float ax2, float ay2, float az2,
+                  float gx2, float gy2, float gz2) {
     if (!deviceConnected || pCharacteristic == nullptr) return;
 
     String msg =
-        String(uq0, 6) + "," +
-        String(uq1, 6) + "," +
-        String(uq2, 6) + "," +
-        String(uq3, 6) + "," +
-        String(fq0, 6) + "," +
-        String(fq1, 6) + "," +
-        String(fq2, 6) + "," +
-        String(fq3, 6);
+        String(ax1, 6) + "," +
+        String(ay1, 6) + "," +
+        String(az1, 6) + "," +
+        String(gx1, 6) + "," +
+        String(gy1, 6) + "," +
+        String(gz1, 6) + "," +
+        String(ax2, 6) + "," +
+        String(ay2, 6) + "," +
+        String(az2, 6) + "," +
+        String(gx2, 6) + "," +
+        String(gy2, 6) + "," +
+        String(gz2, 6);
 
     pCharacteristic->setValue(msg.c_str());
     pCharacteristic->notify();

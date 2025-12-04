@@ -8,35 +8,30 @@ async def notification_handler(sender: int, data: bytes):
     """
     Handle incoming BLE IMU notifications.
 
-    Parameters
-    ----------
-    sender : int
-        BLE characteristic handle that sent the notification.
-    data : bytes
-        Raw BLE payload in the format:
-        "uq0,uq1,uq2,uq3,fq0,fq1,fq2,fq3"
-        where:
-            uq* = shoulder IMU quaternion components (w, x, y, z)
-            fq* = forearm IMU quaternion components (w, x, y, z)
+    Payload format (CSV, UTF-8):
+        ax1,ay1,az1,gx1,gy1,gz1,ax2,ay2,az2,gx2,gy2,gz2
 
-    Returns
-    -------
-    None
+    Units:
+        accel: m/s^2
+        gyro:  rad/s
     """
     imu_text = data.decode("utf-8").strip()
-
     parts = imu_text.split(",")
-    if len(parts) != 8:
-        print("Warning: Received malformed quaternion packet:", imu_text)
+    if len(parts) != 12:
+        print("Unexpected payload length:", len(parts), "data:", imu_text)
         return
 
-    uq0, uq1, uq2, uq3, fq0, fq1, fq2, fq3 = map(float, parts)
+    (ax1, ay1, az1,
+     gx1, gy1, gz1,
+     ax2, ay2, az2,
+     gx2, gy2, gz2) = map(float, parts)
 
-    shoulder_q = (uq0, uq1, uq2, uq3)
-    forearm_q  = (fq0, fq1, fq2, fq3)
+    print(f"Upper IMU  a[m/s^2]=({ax1:.3f}, {ay1:.3f}, {az1:.3f})"
+          f"  w[rad/s]=({gx1:.3f}, {gy1:.3f}, {gz1:.3f})")
 
-    print("Shoulder quat:", shoulder_q)
-    print("Forearm  quat:", forearm_q)
+    print(f"Forearm IMU a[m/s^2]=({ax2:.3f}, {ay2:.3f}, {az2:.3f})"
+          f"  w[rad/s]=({gx2:.3f}, {gy2:.3f}, {gz2:.3f})")
+
 
 async def main():
     """
