@@ -5,8 +5,6 @@
 
 /**
  * @brief Initialize BLE with the given device name.
- *
- * @param deviceName The name of the BLE device (default: "NanoESP32").
  * @return true if initialization was successful, false otherwise.
  */
 bool initBLE(const char* deviceName = "NanoESP32");

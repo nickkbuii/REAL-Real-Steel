@@ -6,10 +6,26 @@
 
 class MPU6050 {
 public:
+    /**
+    * @brief Construct a new MPU6050 object
+    */
     MPU6050(uint8_t addr = 0x68);
+
+    /**
+    * @brief Initialize the MPU6050 sensor
+    * @return true if initialization is successful, false otherwise
+    */
     bool begin(int sda = 21, int scl = 22);
 
+    /**
+     * @brief Read raw accelerometer values
+     */
     void readAccel(int16_t &ax, int16_t &ay, int16_t &az);
+
+
+    /**
+     * @brief Read raw gyroscope values
+     */
     void readGyro(int16_t &gx, int16_t &gy, int16_t &gz);
 
     /**
