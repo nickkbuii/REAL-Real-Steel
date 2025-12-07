@@ -3,6 +3,7 @@
 
 #include <Arduino.h>
 #include <Wire.h>
+#include "EMAFilter.h"
 
 class MPU6050 {
 public:
@@ -62,6 +63,12 @@ private:
     float gx_bias = 0.0f;
     float gy_bias = 0.0f;
     float gz_bias = 0.0f;
+    EMAFilter<float> axFilter{0.2f};
+    EMAFilter<float> ayFilter{0.2f};
+    EMAFilter<float> azFilter{0.2f};
+    EMAFilter<float> gxFilter{0.2f};
+    EMAFilter<float> gyFilter{0.2f};
+    EMAFilter<float> gzFilter{0.2f};
 };
 
 #endif

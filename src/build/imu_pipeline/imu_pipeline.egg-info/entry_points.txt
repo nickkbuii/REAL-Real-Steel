@@ -1,0 +1,3 @@
+[console_scripts]
+ble_imu_bridge = imu_pipeline.ble_imu_bridge:main
+

@@ -1,0 +1,3 @@
+source;share/imu_pipeline/hook/pythonpath.ps1
+source;share/imu_pipeline/hook/pythonpath.dsv
+source;share/imu_pipeline/hook/pythonpath.sh

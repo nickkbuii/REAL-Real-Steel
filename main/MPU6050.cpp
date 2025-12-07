@@ -49,6 +49,10 @@ void MPU6050::readAccelG(float &ax, float &ay, float &az) {
     ax = (static_cast<float>(rx) - ax_bias) / ACC_SENS;
     ay = (static_cast<float>(ry) - ay_bias) / ACC_SENS;
     az = (static_cast<float>(rz) - az_bias) / ACC_SENS;
+
+    ax = axFilter.update(ax);
+    ay = ayFilter.update(ay);
+    az = ayFilter.update(az);
 }
 
 void MPU6050::readGyroDPS(float &gx, float &gy, float &gz) {
@@ -58,6 +62,10 @@ void MPU6050::readGyroDPS(float &gx, float &gy, float &gz) {
     gx = (static_cast<float>(rx) - gx_bias) / GYR_SENS;
     gy = (static_cast<float>(ry) - gy_bias) / GYR_SENS;
     gz = (static_cast<float>(rz) - gz_bias) / GYR_SENS;
+
+    gx = axFilter.update(gx);
+    gy = ayFilter.update(gy);
+    gz = ayFilter.update(gz);
 }
 
 void MPU6050::readAccelms2(float &ax, float &ay, float &az) {
