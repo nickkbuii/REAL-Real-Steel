@@ -6,7 +6,7 @@
 
 #include <Arduino.h>
 #include "MPU6050.h"
-#include "BLEManager.h"
+// #include "BLEManager.h"
 
 MPU6050 imuUpper(0x68);
 MPU6050 imuForearm(0x69);
@@ -33,8 +33,8 @@ void setup() {
 
     Serial.println("Calibration done.");
 
-    bool okBLE = initBLE("NanoESP32");
-    Serial.printf("BLE Connection: %s\n", okBLE ? "OK" : "FAIL");
+    // bool okBLE = initBLE("NanoESP32");
+    // Serial.printf("BLE Connection: %s\n", okBLE ? "OK" : "FAIL");
 }
 
 void loop() {
@@ -64,10 +64,14 @@ void loop() {
     Serial.print(" gy2:"); Serial.print(gy2);
     Serial.print(" gz2:"); Serial.println(gz2);
 
-    updateBLEIMU(
-        ax1, ay1, az1, gx1, gy1, gz1,
-        ax2, ay2, az2, gx2, gy2, gz2
-    );
+    // updateBLEIMU(
+    //     ax1, ay1, az1, gx1, gy1, gz1,
+    //     ax2, ay2, az2, gx2, gy2, gz2
+    // );
+    
+    Serial.printf("%.5f,%.5f,%.5f,%.5f,%.5f,%.5f,%.5f,%.5f,%.5f,%.5f,%.5f,%.5f\n",
+                ax1, ay1, az1, gx1, gy1, gz1,
+                ax2, ay2, az2, gx2, gy2, gz2);
 
     delay(20);
 }

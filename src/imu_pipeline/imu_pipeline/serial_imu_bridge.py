@@ -4,7 +4,7 @@ from sensor_msgs.msg import Imu
 import serial
 import time
 
-PORT = "/dev/ttyACM0"   # or ttyACM0 depending on ESP board
+PORT = "/dev/ttyACM0"
 BAUD = 115200
 
 
@@ -16,7 +16,7 @@ class SerialIMUNode(Node):
         self.pub_fore  = self.create_publisher(Imu, "forearm_imu/data_raw", 10)
 
         self.ser = serial.Serial(PORT, BAUD, timeout=0.1)
-        time.sleep(2)  # allow ESP32 reset
+        time.sleep(2)
 
         self.get_logger().info(f"Connected to {PORT} @ {BAUD}")
 
