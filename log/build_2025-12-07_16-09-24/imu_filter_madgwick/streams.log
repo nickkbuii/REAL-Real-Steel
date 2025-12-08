@@ -1,0 +1,109 @@
+[0.089s] Invoking command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_filter_madgwick': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/imu_filter_madgwick -DCMAKE_INSTALL_PREFIX=/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick
+[0.222s] -- The C compiler identification is GNU 11.4.0
+[0.323s] -- The CXX compiler identification is GNU 11.4.0
+[0.342s] -- Detecting C compiler ABI info
+[0.563s] -- Detecting C compiler ABI info - done
+[0.576s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.577s] -- Detecting C compile features
+[0.577s] -- Detecting C compile features - done
+[0.592s] -- Detecting CXX compiler ABI info
+[0.817s] -- Detecting CXX compiler ABI info - done
+[0.833s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.834s] -- Detecting CXX compile features
+[0.835s] -- Detecting CXX compile features - done
+[0.855s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.060s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.242s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[1.313s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.322s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.333s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.348s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.371s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.429s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.434s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.628s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.671s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.716s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.744s] -- Looking for pthread.h
+[2.022s] -- Looking for pthread.h - found
+[2.026s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.297s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.300s] -- Found Threads: TRUE  
+[2.363s] -- Found rclcpp_components: 16.0.15 (/opt/ros/humble/share/rclcpp_components/cmake)
+[2.396s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.411s] -- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[2.435s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.436s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[2.436s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.521s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[2.539s] -- Found ament_cmake_gtest: 1.3.12 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[2.552s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.826s] -- Configuring done
+[3.259s] -- Generating done
+[3.364s] -- Build files have been written to: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_filter_madgwick
+[3.371s] Invoked command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_filter_madgwick' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/imu_filter_madgwick -DCMAKE_INSTALL_PREFIX=/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick
+[3.375s] Invoking command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_filter_madgwick': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --build /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_filter_madgwick -- -j32 -l32
+[3.498s] [ 14%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[3.502s] [ 35%] [32mBuilding CXX object CMakeFiles/imu_filter_madgwick.dir/src/imu_filter.cpp.o[0m
+[3.502s] [ 35%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[3.502s] [ 35%] [32mBuilding CXX object CMakeFiles/imu_filter_madgwick.dir/src/imu_filter_ros.cpp.o[0m
+[3.502s] [ 35%] [32mBuilding CXX object CMakeFiles/imu_filter_madgwick.dir/src/stateless_orientation.cpp.o[0m
+[4.053s] [ 42%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[4.107s] [ 42%] Built target gtest_main
+[5.544s] [ 50%] [32m[1mLinking CXX static library libgtest.a[0m
+[5.699s] [ 50%] Built target gtest
+[14.206s] [ 57%] [32m[1mLinking CXX shared library libimu_filter_madgwick.so[0m
+[15.996s] [ 57%] Built target imu_filter_madgwick
+[16.055s] [ 71%] [32mBuilding CXX object test/CMakeFiles/stateless_orientation_test.dir/stateless_orientation_test.cpp.o[0m
+[16.060s] [ 71%] [32mBuilding CXX object test/CMakeFiles/madgwick_test.dir/madgwick_test.cpp.o[0m
+[16.063s] [ 78%] [32mBuilding CXX object CMakeFiles/imu_filter_madgwick_node.dir/src/imu_filter_node.cpp.o[0m
+[16.985s] [ 92%] [32m[1mLinking CXX executable stateless_orientation_test[0m
+[16.986s] [ 92%] [32m[1mLinking CXX executable madgwick_test[0m
+[17.418s] [ 92%] Built target stateless_orientation_test
+[17.419s] [ 92%] Built target madgwick_test
+[17.874s] [100%] [32m[1mLinking CXX executable imu_filter_madgwick_node[0m
+[18.179s] [100%] Built target imu_filter_madgwick_node
+[18.216s] Invoked command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_filter_madgwick' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --build /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_filter_madgwick -- -j32 -l32
+[18.223s] Invoking command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_filter_madgwick': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --install /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_filter_madgwick
+[18.243s] -- Install configuration: ""
+[18.248s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/lib/libimu_filter_madgwick.so
+[18.434s] -- Set runtime path of "/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/lib/libimu_filter_madgwick.so" to ""
+[18.434s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/include
+[18.438s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/include/imu_filter_madgwick
+[18.443s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/include/imu_filter_madgwick/base_node.hpp
+[18.450s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/include/imu_filter_madgwick/imu_filter.h
+[18.457s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/include/imu_filter_madgwick/imu_filter_ros.h
+[18.463s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/include/imu_filter_madgwick/stateless_orientation.h
+[18.470s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/include/imu_filter_madgwick/visibility_control.h
+[18.476s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/include/imu_filter_madgwick/world_frame.h
+[18.486s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/lib/imu_filter_madgwick/imu_filter_madgwick_node
+[18.500s] -- Set runtime path of "/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/lib/imu_filter_madgwick/imu_filter_madgwick_node" to ""
+[18.502s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/launch
+[18.507s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/launch/imu_filter.launch.py
+[18.514s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/launch/imu_filter_component.launch.py
+[18.520s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/config
+[18.525s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/config/imu_filter.yaml
+[18.536s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/library_path.sh
+[18.541s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/library_path.dsv
+[18.556s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/ament_index/resource_index/package_run_dependencies/imu_filter_madgwick
+[18.567s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/ament_index/resource_index/parent_prefix_path/imu_filter_madgwick
+[18.574s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/ament_prefix_path.sh
+[18.579s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/ament_prefix_path.dsv
+[18.585s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/path.sh
+[18.590s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/environment/path.dsv
+[18.596s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/local_setup.bash
+[18.603s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/local_setup.sh
+[18.611s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/local_setup.zsh
+[18.617s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/local_setup.dsv
+[18.623s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/package.dsv
+[18.633s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/ament_index/resource_index/packages/imu_filter_madgwick
+[18.643s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/ament_index/resource_index/rclcpp_components/imu_filter_madgwick
+[18.653s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/export_imu_filter_madgwickExport.cmake
+[18.660s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/export_imu_filter_madgwickExport-noconfig.cmake
+[18.667s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/ament_cmake_export_include_directories-extras.cmake
+[18.673s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/ament_cmake_export_libraries-extras.cmake
+[18.680s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/ament_cmake_export_targets-extras.cmake
+[18.686s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/imu_filter_madgwickConfig.cmake
+[18.692s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/cmake/imu_filter_madgwickConfig-version.cmake
+[18.699s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/package.xml
+[18.713s] Invoked command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_filter_madgwick' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --install /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_filter_madgwick

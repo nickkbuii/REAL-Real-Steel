@@ -1,0 +1,518 @@
+[0.087s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.087s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=32, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x716f7a532530>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x716f7a5318d0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x716f7a5318d0>>, mixin_verb=('build',))
+[0.210s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.210s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.210s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.210s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.210s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.211s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.211s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel'
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.212s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.214s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.223s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.224s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.225s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.226s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.227s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(main) by extensions ['ignore', 'ignore_ament_install']
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(main) by extension 'ignore'
+[0.228s] Level 1:colcon.colcon_core.package_identification:_identify(main) by extension 'ignore_ament_install'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(main) by extensions ['colcon_pkg']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(main) by extension 'colcon_pkg'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(main) by extensions ['colcon_meta']
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(main) by extension 'colcon_meta'
+[0.229s] Level 1:colcon.colcon_core.package_identification:_identify(main) by extensions ['ros']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(main) by extension 'ros'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(main) by extensions ['cmake', 'python']
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(main) by extension 'cmake'
+[0.230s] Level 1:colcon.colcon_core.package_identification:_identify(main) by extension 'python'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(main) by extensions ['python_setup_py']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(main) by extension 'python_setup_py'
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(schematics) by extensions ['ignore', 'ignore_ament_install']
+[0.231s] Level 1:colcon.colcon_core.package_identification:_identify(schematics) by extension 'ignore'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(schematics) by extension 'ignore_ament_install'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(schematics) by extensions ['colcon_pkg']
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(schematics) by extension 'colcon_pkg'
+[0.232s] Level 1:colcon.colcon_core.package_identification:_identify(schematics) by extensions ['colcon_meta']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(schematics) by extension 'colcon_meta'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(schematics) by extensions ['ros']
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(schematics) by extension 'ros'
+[0.233s] Level 1:colcon.colcon_core.package_identification:_identify(schematics) by extensions ['cmake', 'python']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(schematics) by extension 'cmake'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(schematics) by extension 'python'
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(schematics) by extensions ['python_setup_py']
+[0.234s] Level 1:colcon.colcon_core.package_identification:_identify(schematics) by extension 'python_setup_py'
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(schematics/schematics-backups) by extensions ['ignore', 'ignore_ament_install']
+[0.235s] Level 1:colcon.colcon_core.package_identification:_identify(schematics/schematics-backups) by extension 'ignore'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(schematics/schematics-backups) by extension 'ignore_ament_install'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(schematics/schematics-backups) by extensions ['colcon_pkg']
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(schematics/schematics-backups) by extension 'colcon_pkg'
+[0.236s] Level 1:colcon.colcon_core.package_identification:_identify(schematics/schematics-backups) by extensions ['colcon_meta']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(schematics/schematics-backups) by extension 'colcon_meta'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(schematics/schematics-backups) by extensions ['ros']
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(schematics/schematics-backups) by extension 'ros'
+[0.237s] Level 1:colcon.colcon_core.package_identification:_identify(schematics/schematics-backups) by extensions ['cmake', 'python']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(schematics/schematics-backups) by extension 'cmake'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(schematics/schematics-backups) by extension 'python'
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(schematics/schematics-backups) by extensions ['python_setup_py']
+[0.238s] Level 1:colcon.colcon_core.package_identification:_identify(schematics/schematics-backups) by extension 'python_setup_py'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.239s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.240s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.241s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.242s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pipe_test) by extensions ['ignore', 'ignore_ament_install']
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pipe_test) by extension 'ignore'
+[0.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pipe_test) by extension 'ignore_ament_install'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pipe_test) by extensions ['colcon_pkg']
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pipe_test) by extension 'colcon_pkg'
+[0.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pipe_test) by extensions ['colcon_meta']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pipe_test) by extension 'colcon_meta'
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pipe_test) by extensions ['ros']
+[0.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pipe_test) by extension 'ros'
+[0.252s] DEBUG:colcon.colcon_core.package_identification:Package 'src/imu_pipe_test' with type 'ros.ament_python' and name 'imu_pipe_test'
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pipeline) by extensions ['ignore', 'ignore_ament_install']
+[0.252s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pipeline) by extension 'ignore'
+[0.253s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pipeline) by extension 'ignore_ament_install'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pipeline) by extensions ['colcon_pkg']
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pipeline) by extension 'colcon_pkg'
+[0.254s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pipeline) by extensions ['colcon_meta']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pipeline) by extension 'colcon_meta'
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pipeline) by extensions ['ros']
+[0.255s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pipeline) by extension 'ros'
+[0.257s] DEBUG:colcon.colcon_core.package_identification:Failed to parse potential ROS package manifest in'src/imu_pipeline': Error(s) in package 'src/imu_pipeline/package.xml':
+The manifest contains invalid XML:
+junk after document element: line 2, column 0
+[0.257s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pipeline) by extensions ['cmake', 'python']
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pipeline) by extension 'cmake'
+[0.258s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pipeline) by extension 'python'
+[0.259s] DEBUG:colcon.colcon_core.package_identification:Python package in 'src/imu_pipeline' passes arguments to the setup() function which requires a different identification extension than 'python'
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pipeline) by extensions ['python_setup_py']
+[0.259s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_pipeline) by extension 'python_setup_py'
+[0.480s] DEBUG:colcon.colcon_core.package_identification:Package 'src/imu_pipeline' with type 'python' and name 'imu_pipeline'
+[0.480s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools) by extensions ['ignore', 'ignore_ament_install']
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools) by extension 'ignore'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools) by extension 'ignore_ament_install'
+[0.481s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools) by extensions ['colcon_pkg']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools) by extension 'colcon_pkg'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools) by extensions ['colcon_meta']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools) by extension 'colcon_meta'
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools) by extensions ['ros']
+[0.482s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools) by extension 'ros'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools) by extensions ['cmake', 'python']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools) by extension 'cmake'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools) by extension 'python'
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools) by extensions ['python_setup_py']
+[0.483s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools) by extension 'python_setup_py'
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/imu_complementary_filter) by extensions ['ignore', 'ignore_ament_install']
+[0.484s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/imu_complementary_filter) by extension 'ignore'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/imu_complementary_filter) by extension 'ignore_ament_install'
+[0.485s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/imu_complementary_filter) by extensions ['colcon_pkg']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/imu_complementary_filter) by extension 'colcon_pkg'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/imu_complementary_filter) by extensions ['colcon_meta']
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/imu_complementary_filter) by extension 'colcon_meta'
+[0.486s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/imu_complementary_filter) by extensions ['ros']
+[0.487s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/imu_complementary_filter) by extension 'ros'
+[0.488s] DEBUG:colcon.colcon_core.package_identification:Package 'src/imu_tools/imu_complementary_filter' with type 'ros.ament_cmake' and name 'imu_complementary_filter'
+[0.488s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/imu_filter_madgwick) by extensions ['ignore', 'ignore_ament_install']
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/imu_filter_madgwick) by extension 'ignore'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/imu_filter_madgwick) by extension 'ignore_ament_install'
+[0.489s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/imu_filter_madgwick) by extensions ['colcon_pkg']
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/imu_filter_madgwick) by extension 'colcon_pkg'
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/imu_filter_madgwick) by extensions ['colcon_meta']
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/imu_filter_madgwick) by extension 'colcon_meta'
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/imu_filter_madgwick) by extensions ['ros']
+[0.490s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/imu_filter_madgwick) by extension 'ros'
+[0.492s] DEBUG:colcon.colcon_core.package_identification:Package 'src/imu_tools/imu_filter_madgwick' with type 'ros.ament_cmake' and name 'imu_filter_madgwick'
+[0.492s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/imu_tools) by extensions ['ignore', 'ignore_ament_install']
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/imu_tools) by extension 'ignore'
+[0.493s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/imu_tools) by extension 'ignore_ament_install'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/imu_tools) by extensions ['colcon_pkg']
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/imu_tools) by extension 'colcon_pkg'
+[0.494s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/imu_tools) by extensions ['colcon_meta']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/imu_tools) by extension 'colcon_meta'
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/imu_tools) by extensions ['ros']
+[0.495s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/imu_tools) by extension 'ros'
+[0.496s] DEBUG:colcon.colcon_core.package_identification:Package 'src/imu_tools/imu_tools' with type 'ros.ament_cmake' and name 'imu_tools'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/rviz_imu_plugin) by extensions ['ignore', 'ignore_ament_install']
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/rviz_imu_plugin) by extension 'ignore'
+[0.497s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/rviz_imu_plugin) by extension 'ignore_ament_install'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/rviz_imu_plugin) by extensions ['colcon_pkg']
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/rviz_imu_plugin) by extension 'colcon_pkg'
+[0.498s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/rviz_imu_plugin) by extensions ['colcon_meta']
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/rviz_imu_plugin) by extension 'colcon_meta'
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/rviz_imu_plugin) by extensions ['ros']
+[0.499s] Level 1:colcon.colcon_core.package_identification:_identify(src/imu_tools/rviz_imu_plugin) by extension 'ros'
+[0.501s] DEBUG:colcon.colcon_core.package_identification:Package 'src/imu_tools/rviz_imu_plugin' with type 'ros.ament_cmake' and name 'rviz_imu_plugin'
+[0.501s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.502s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.502s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.502s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.502s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.528s] Level 5:colcon.colcon_core.verb:set package 'imu_complementary_filter' build argument 'cmake_args' from command line to 'None'
+[0.528s] Level 5:colcon.colcon_core.verb:set package 'imu_complementary_filter' build argument 'cmake_target' from command line to 'None'
+[0.528s] Level 5:colcon.colcon_core.verb:set package 'imu_complementary_filter' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.528s] Level 5:colcon.colcon_core.verb:set package 'imu_complementary_filter' build argument 'cmake_clean_cache' from command line to 'False'
+[0.528s] Level 5:colcon.colcon_core.verb:set package 'imu_complementary_filter' build argument 'cmake_clean_first' from command line to 'False'
+[0.528s] Level 5:colcon.colcon_core.verb:set package 'imu_complementary_filter' build argument 'cmake_force_configure' from command line to 'False'
+[0.528s] Level 5:colcon.colcon_core.verb:set package 'imu_complementary_filter' build argument 'ament_cmake_args' from command line to 'None'
+[0.528s] Level 5:colcon.colcon_core.verb:set package 'imu_complementary_filter' build argument 'catkin_cmake_args' from command line to 'None'
+[0.528s] Level 5:colcon.colcon_core.verb:set package 'imu_complementary_filter' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.528s] DEBUG:colcon.colcon_core.verb:Building package 'imu_complementary_filter' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_complementary_filter', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter', 'merge_install': False, 'path': '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/imu_complementary_filter', 'symlink_install': False, 'test_result_base': None}
+[0.528s] Level 5:colcon.colcon_core.verb:set package 'imu_filter_madgwick' build argument 'cmake_args' from command line to 'None'
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'imu_filter_madgwick' build argument 'cmake_target' from command line to 'None'
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'imu_filter_madgwick' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'imu_filter_madgwick' build argument 'cmake_clean_cache' from command line to 'False'
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'imu_filter_madgwick' build argument 'cmake_clean_first' from command line to 'False'
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'imu_filter_madgwick' build argument 'cmake_force_configure' from command line to 'False'
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'imu_filter_madgwick' build argument 'ament_cmake_args' from command line to 'None'
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'imu_filter_madgwick' build argument 'catkin_cmake_args' from command line to 'None'
+[0.529s] Level 5:colcon.colcon_core.verb:set package 'imu_filter_madgwick' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.529s] DEBUG:colcon.colcon_core.verb:Building package 'imu_filter_madgwick' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_filter_madgwick', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick', 'merge_install': False, 'path': '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/imu_filter_madgwick', 'symlink_install': False, 'test_result_base': None}
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'imu_pipeline' build argument 'cmake_args' from command line to 'None'
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'imu_pipeline' build argument 'cmake_target' from command line to 'None'
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'imu_pipeline' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'imu_pipeline' build argument 'cmake_clean_cache' from command line to 'False'
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'imu_pipeline' build argument 'cmake_clean_first' from command line to 'False'
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'imu_pipeline' build argument 'cmake_force_configure' from command line to 'False'
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'imu_pipeline' build argument 'ament_cmake_args' from command line to 'None'
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'imu_pipeline' build argument 'catkin_cmake_args' from command line to 'None'
+[0.530s] Level 5:colcon.colcon_core.verb:set package 'imu_pipeline' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.530s] DEBUG:colcon.colcon_core.verb:Building package 'imu_pipeline' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_pipeline', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipeline', 'merge_install': False, 'path': '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_pipeline', 'symlink_install': False, 'test_result_base': None}
+[0.531s] Level 5:colcon.colcon_core.verb:set package 'rviz_imu_plugin' build argument 'cmake_args' from command line to 'None'
+[0.531s] Level 5:colcon.colcon_core.verb:set package 'rviz_imu_plugin' build argument 'cmake_target' from command line to 'None'
+[0.531s] Level 5:colcon.colcon_core.verb:set package 'rviz_imu_plugin' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.531s] Level 5:colcon.colcon_core.verb:set package 'rviz_imu_plugin' build argument 'cmake_clean_cache' from command line to 'False'
+[0.531s] Level 5:colcon.colcon_core.verb:set package 'rviz_imu_plugin' build argument 'cmake_clean_first' from command line to 'False'
+[0.531s] Level 5:colcon.colcon_core.verb:set package 'rviz_imu_plugin' build argument 'cmake_force_configure' from command line to 'False'
+[0.531s] Level 5:colcon.colcon_core.verb:set package 'rviz_imu_plugin' build argument 'ament_cmake_args' from command line to 'None'
+[0.531s] Level 5:colcon.colcon_core.verb:set package 'rviz_imu_plugin' build argument 'catkin_cmake_args' from command line to 'None'
+[0.531s] Level 5:colcon.colcon_core.verb:set package 'rviz_imu_plugin' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.532s] DEBUG:colcon.colcon_core.verb:Building package 'rviz_imu_plugin' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin', 'merge_install': False, 'path': '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin', 'symlink_install': False, 'test_result_base': None}
+[0.532s] Level 5:colcon.colcon_core.verb:set package 'imu_pipe_test' build argument 'cmake_args' from command line to 'None'
+[0.532s] Level 5:colcon.colcon_core.verb:set package 'imu_pipe_test' build argument 'cmake_target' from command line to 'None'
+[0.532s] Level 5:colcon.colcon_core.verb:set package 'imu_pipe_test' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.532s] Level 5:colcon.colcon_core.verb:set package 'imu_pipe_test' build argument 'cmake_clean_cache' from command line to 'False'
+[0.532s] Level 5:colcon.colcon_core.verb:set package 'imu_pipe_test' build argument 'cmake_clean_first' from command line to 'False'
+[0.532s] Level 5:colcon.colcon_core.verb:set package 'imu_pipe_test' build argument 'cmake_force_configure' from command line to 'False'
+[0.532s] Level 5:colcon.colcon_core.verb:set package 'imu_pipe_test' build argument 'ament_cmake_args' from command line to 'None'
+[0.532s] Level 5:colcon.colcon_core.verb:set package 'imu_pipe_test' build argument 'catkin_cmake_args' from command line to 'None'
+[0.532s] Level 5:colcon.colcon_core.verb:set package 'imu_pipe_test' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.533s] DEBUG:colcon.colcon_core.verb:Building package 'imu_pipe_test' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_pipe_test', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test', 'merge_install': False, 'path': '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_pipe_test', 'symlink_install': False, 'test_result_base': None}
+[0.533s] Level 5:colcon.colcon_core.verb:set package 'imu_tools' build argument 'cmake_args' from command line to 'None'
+[0.533s] Level 5:colcon.colcon_core.verb:set package 'imu_tools' build argument 'cmake_target' from command line to 'None'
+[0.533s] Level 5:colcon.colcon_core.verb:set package 'imu_tools' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.533s] Level 5:colcon.colcon_core.verb:set package 'imu_tools' build argument 'cmake_clean_cache' from command line to 'False'
+[0.533s] Level 5:colcon.colcon_core.verb:set package 'imu_tools' build argument 'cmake_clean_first' from command line to 'False'
+[0.533s] Level 5:colcon.colcon_core.verb:set package 'imu_tools' build argument 'cmake_force_configure' from command line to 'False'
+[0.533s] Level 5:colcon.colcon_core.verb:set package 'imu_tools' build argument 'ament_cmake_args' from command line to 'None'
+[0.533s] Level 5:colcon.colcon_core.verb:set package 'imu_tools' build argument 'catkin_cmake_args' from command line to 'None'
+[0.534s] Level 5:colcon.colcon_core.verb:set package 'imu_tools' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.534s] DEBUG:colcon.colcon_core.verb:Building package 'imu_tools' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_tools', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools', 'merge_install': False, 'path': '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/imu_tools', 'symlink_install': False, 'test_result_base': None}
+[0.534s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.541s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.541s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/imu_filter_madgwick' with build type 'ament_cmake'
+[0.542s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/imu_filter_madgwick'
+[0.543s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.544s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.544s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.545s] WARNING:colcon.colcon_core.prefix_path.colcon:The path '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install' in the environment variable COLCON_PREFIX_PATH doesn't exist
+[0.549s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/imu_tools' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.549s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/rviz_imu_plugin' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.549s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/imu_filter_madgwick' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.549s] WARNING:colcon.colcon_ros.prefix_path.ament:The path '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/imu_complementary_filter' in the environment variable AMENT_PREFIX_PATH doesn't exist
+[0.550s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/imu_tools' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.550s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/rviz_imu_plugin' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.550s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/imu_filter_madgwick' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.551s] WARNING:colcon.colcon_ros.prefix_path.catkin:The path '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/imu_complementary_filter' in the environment variable CMAKE_PREFIX_PATH doesn't exist
+[0.568s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/imu_complementary_filter' with build type 'ament_cmake'
+[0.568s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/imu_complementary_filter'
+[0.569s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.569s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.587s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin' with build type 'ament_cmake'
+[0.587s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin'
+[0.588s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.588s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.606s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_pipeline'
+[0.607s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.607s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.643s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_filter_madgwick': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --build /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_filter_madgwick -- -j32 -l32
+[0.656s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_complementary_filter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --build /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_complementary_filter -- -j32 -l32
+[0.669s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --build /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin -- -j32 -l32
+[1.002s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_complementary_filter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --build /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_complementary_filter -- -j32 -l32
+[1.030s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_complementary_filter': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --install /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_complementary_filter
+[1.031s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_filter_madgwick' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --build /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_filter_madgwick -- -j32 -l32
+[1.036s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_filter_madgwick': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --install /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_filter_madgwick
+[1.094s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --build /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin -- -j32 -l32
+[1.100s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --install /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin
+[1.125s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(imu_complementary_filter)
+[1.126s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_complementary_filter' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --install /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_complementary_filter
+[1.128s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter' for CMake module files
+[1.130s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter' for CMake config files
+[1.135s] Level 1:colcon.colcon_core.shell:create_environment_hook('imu_complementary_filter', 'cmake_prefix_path')
+[1.135s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/hook/cmake_prefix_path.ps1'
+[1.138s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/hook/cmake_prefix_path.dsv'
+[1.141s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/hook/cmake_prefix_path.sh'
+[1.145s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/lib'
+[1.145s] Level 1:colcon.colcon_core.shell:create_environment_hook('imu_complementary_filter', 'ld_library_path_lib')
+[1.145s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/hook/ld_library_path_lib.ps1'
+[1.148s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/hook/ld_library_path_lib.dsv'
+[1.150s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/hook/ld_library_path_lib.sh'
+[1.153s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/bin'
+[1.153s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/lib/pkgconfig/imu_complementary_filter.pc'
+[1.153s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/lib/python3.10/site-packages'
+[1.153s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/bin'
+[1.154s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/package.ps1'
+[1.156s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/package.dsv'
+[1.158s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/package.sh'
+[1.160s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/package.bash'
+[1.162s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/package.zsh'
+[1.164s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/colcon-core/packages/imu_complementary_filter)
+[1.167s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(imu_complementary_filter)
+[1.167s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter' for CMake module files
+[1.169s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter' for CMake config files
+[1.172s] Level 1:colcon.colcon_core.shell:create_environment_hook('imu_complementary_filter', 'cmake_prefix_path')
+[1.173s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/hook/cmake_prefix_path.ps1'
+[1.175s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/hook/cmake_prefix_path.dsv'
+[1.177s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/hook/cmake_prefix_path.sh'
+[1.180s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/lib'
+[1.180s] Level 1:colcon.colcon_core.shell:create_environment_hook('imu_complementary_filter', 'ld_library_path_lib')
+[1.180s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/hook/ld_library_path_lib.ps1'
+[1.183s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/hook/ld_library_path_lib.dsv'
+[1.185s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/hook/ld_library_path_lib.sh'
+[1.187s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/bin'
+[1.187s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/lib/pkgconfig/imu_complementary_filter.pc'
+[1.187s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/lib/python3.10/site-packages'
+[1.187s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/bin'
+[1.188s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/package.ps1'
+[1.190s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/package.dsv'
+[1.193s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/package.sh'
+[1.195s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/package.bash'
+[1.197s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/package.zsh'
+[1.199s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/colcon-core/packages/imu_complementary_filter)
+[1.201s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(imu_filter_madgwick)
+[1.201s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick' for CMake module files
+[1.204s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick' for CMake config files
+[1.204s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_filter_madgwick' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --install /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_filter_madgwick
+[1.209s] Level 1:colcon.colcon_core.shell:create_environment_hook('imu_filter_madgwick', 'cmake_prefix_path')
+[1.209s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/hook/cmake_prefix_path.ps1'
+[1.211s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/hook/cmake_prefix_path.dsv'
+[1.214s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/hook/cmake_prefix_path.sh'
+[1.217s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/lib'
+[1.217s] Level 1:colcon.colcon_core.shell:create_environment_hook('imu_filter_madgwick', 'ld_library_path_lib')
+[1.218s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/hook/ld_library_path_lib.ps1'
+[1.220s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/hook/ld_library_path_lib.dsv'
+[1.223s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/hook/ld_library_path_lib.sh'
+[1.225s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/bin'
+[1.225s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/lib/pkgconfig/imu_filter_madgwick.pc'
+[1.226s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/lib/python3.10/site-packages'
+[1.226s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/bin'
+[1.227s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/package.ps1'
+[1.229s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/package.dsv'
+[1.232s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/package.sh'
+[1.234s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/package.bash'
+[1.236s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/package.zsh'
+[1.239s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/colcon-core/packages/imu_filter_madgwick)
+[1.243s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(imu_filter_madgwick)
+[1.243s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick' for CMake module files
+[1.245s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick' for CMake config files
+[1.249s] Level 1:colcon.colcon_core.shell:create_environment_hook('imu_filter_madgwick', 'cmake_prefix_path')
+[1.249s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/hook/cmake_prefix_path.ps1'
+[1.252s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/hook/cmake_prefix_path.dsv'
+[1.253s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/hook/cmake_prefix_path.sh'
+[1.256s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/lib'
+[1.256s] Level 1:colcon.colcon_core.shell:create_environment_hook('imu_filter_madgwick', 'ld_library_path_lib')
+[1.257s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/hook/ld_library_path_lib.ps1'
+[1.259s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/hook/ld_library_path_lib.dsv'
+[1.262s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/hook/ld_library_path_lib.sh'
+[1.264s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/bin'
+[1.264s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/lib/pkgconfig/imu_filter_madgwick.pc'
+[1.264s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/lib/python3.10/site-packages'
+[1.265s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/bin'
+[1.265s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/package.ps1'
+[1.267s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/package.dsv'
+[1.269s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/package.sh'
+[1.272s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/package.bash'
+[1.274s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/imu_filter_madgwick/package.zsh'
+[1.276s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/share/colcon-core/packages/imu_filter_madgwick)
+[1.278s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rviz_imu_plugin)
+[1.278s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin' for CMake module files
+[1.280s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin' for CMake config files
+[1.281s] Level 1:colcon.colcon_core.shell:create_environment_hook('rviz_imu_plugin', 'cmake_prefix_path')
+[1.282s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/share/rviz_imu_plugin/hook/cmake_prefix_path.ps1'
+[1.282s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --install /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin
+[1.284s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/share/rviz_imu_plugin/hook/cmake_prefix_path.dsv'
+[1.286s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/share/rviz_imu_plugin/hook/cmake_prefix_path.sh'
+[1.289s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/lib'
+[1.289s] Level 1:colcon.colcon_core.shell:create_environment_hook('rviz_imu_plugin', 'ld_library_path_lib')
+[1.290s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/share/rviz_imu_plugin/hook/ld_library_path_lib.ps1'
+[1.292s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/share/rviz_imu_plugin/hook/ld_library_path_lib.dsv'
+[1.295s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/share/rviz_imu_plugin/hook/ld_library_path_lib.sh'
+[1.297s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/bin'
+[1.297s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/lib/pkgconfig/rviz_imu_plugin.pc'
+[1.297s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/lib/python3.10/site-packages'
+[1.297s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/bin'
+[1.298s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/share/rviz_imu_plugin/package.ps1'
+[1.301s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/share/rviz_imu_plugin/package.dsv'
+[1.303s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/share/rviz_imu_plugin/package.sh'
+[1.305s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/share/rviz_imu_plugin/package.bash'
+[1.307s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/share/rviz_imu_plugin/package.zsh'
+[1.308s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/share/colcon-core/packages/rviz_imu_plugin)
+[1.312s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rviz_imu_plugin)
+[1.312s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin' for CMake module files
+[1.313s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin' for CMake config files
+[1.314s] Level 1:colcon.colcon_core.shell:create_environment_hook('rviz_imu_plugin', 'cmake_prefix_path')
+[1.314s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/share/rviz_imu_plugin/hook/cmake_prefix_path.ps1'
+[1.317s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/share/rviz_imu_plugin/hook/cmake_prefix_path.dsv'
+[1.319s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/share/rviz_imu_plugin/hook/cmake_prefix_path.sh'
+[1.321s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/lib'
+[1.321s] Level 1:colcon.colcon_core.shell:create_environment_hook('rviz_imu_plugin', 'ld_library_path_lib')
+[1.321s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/share/rviz_imu_plugin/hook/ld_library_path_lib.ps1'
+[1.325s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/share/rviz_imu_plugin/hook/ld_library_path_lib.dsv'
+[1.327s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/share/rviz_imu_plugin/hook/ld_library_path_lib.sh'
+[1.329s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/bin'
+[1.329s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/lib/pkgconfig/rviz_imu_plugin.pc'
+[1.329s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/lib/python3.10/site-packages'
+[1.329s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/bin'
+[1.330s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/share/rviz_imu_plugin/package.ps1'
+[1.332s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/share/rviz_imu_plugin/package.dsv'
+[1.335s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/share/rviz_imu_plugin/package.sh'
+[1.337s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/share/rviz_imu_plugin/package.bash'
+[1.339s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/share/rviz_imu_plugin/package.zsh'
+[1.341s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/share/colcon-core/packages/rviz_imu_plugin)
+[1.343s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_pipe_test' with build type 'ament_python'
+[1.343s] Level 1:colcon.colcon_core.shell:create_environment_hook('imu_pipe_test', 'ament_prefix_path')
+[1.343s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test/share/imu_pipe_test/hook/ament_prefix_path.ps1'
+[1.347s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test/share/imu_pipe_test/hook/ament_prefix_path.dsv'
+[1.349s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test/share/imu_pipe_test/hook/ament_prefix_path.sh'
+[1.352s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.352s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.365s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/imu_tools' with build type 'ament_cmake'
+[1.365s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/imu_tools'
+[1.366s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.366s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.393s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_pipeline': PYTHONPATH=/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_pipeline/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipeline/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/imu_pipeline build --build-base /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_pipeline/build install --record /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_pipeline/install.log --single-version-externally-managed install_data
+[1.618s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_pipe_test'
+[1.619s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.619s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.659s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_tools': CMAKE_PREFIX_PATH=/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/imu_tools:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/rviz_imu_plugin:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/imu_filter_madgwick:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/imu_complementary_filter:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --build /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_tools -- -j32 -l32
+[1.725s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipeline' for CMake module files
+[1.725s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_pipeline' returned '0': PYTHONPATH=/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_pipeline/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipeline/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/imu_pipeline build --build-base /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_pipeline/build install --record /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_pipeline/install.log --single-version-externally-managed install_data
+[1.728s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipeline' for CMake config files
+[1.734s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipeline/lib'
+[1.734s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipeline/bin'
+[1.734s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipeline/lib/pkgconfig/imu_pipeline.pc'
+[1.735s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipeline/lib/python3.10/site-packages'
+[1.735s] Level 1:colcon.colcon_core.shell:create_environment_hook('imu_pipeline', 'pythonpath')
+[1.736s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipeline/share/imu_pipeline/hook/pythonpath.ps1'
+[1.739s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipeline/share/imu_pipeline/hook/pythonpath.dsv'
+[1.741s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipeline/share/imu_pipeline/hook/pythonpath.sh'
+[1.744s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipeline/bin'
+[1.744s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(imu_pipeline)
+[1.744s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipeline/share/imu_pipeline/package.ps1'
+[1.747s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipeline/share/imu_pipeline/package.dsv'
+[1.749s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipeline/share/imu_pipeline/package.sh'
+[1.752s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipeline/share/imu_pipeline/package.bash'
+[1.754s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipeline/share/imu_pipeline/package.zsh'
+[1.756s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipeline/share/colcon-core/packages/imu_pipeline)
+[1.763s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_tools' returned '0': CMAKE_PREFIX_PATH=/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/imu_tools:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/rviz_imu_plugin:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/imu_filter_madgwick:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/imu_complementary_filter:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --build /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_tools -- -j32 -l32
+[1.764s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_tools': CMAKE_PREFIX_PATH=/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/imu_tools:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/rviz_imu_plugin:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/imu_filter_madgwick:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/imu_complementary_filter:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --install /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_tools
+[1.788s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(imu_tools)
+[1.788s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools' for CMake module files
+[1.788s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_tools' returned '0': CMAKE_PREFIX_PATH=/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/imu_tools:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/rviz_imu_plugin:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/imu_filter_madgwick:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/imu_complementary_filter:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test:/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --install /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_tools
+[1.790s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools' for CMake config files
+[1.793s] Level 1:colcon.colcon_core.shell:create_environment_hook('imu_tools', 'cmake_prefix_path')
+[1.793s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/imu_tools/hook/cmake_prefix_path.ps1'
+[1.796s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/imu_tools/hook/cmake_prefix_path.dsv'
+[1.798s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/imu_tools/hook/cmake_prefix_path.sh'
+[1.800s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/bin'
+[1.800s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/lib/pkgconfig/imu_tools.pc'
+[1.800s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/lib/python3.10/site-packages'
+[1.801s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/bin'
+[1.801s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/imu_tools/package.ps1'
+[1.804s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/imu_tools/package.dsv'
+[1.806s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/imu_tools/package.sh'
+[1.808s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/imu_tools/package.bash'
+[1.810s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/imu_tools/package.zsh'
+[1.812s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/colcon-core/packages/imu_tools)
+[1.817s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(imu_tools)
+[1.817s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools' for CMake module files
+[1.818s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools' for CMake config files
+[1.822s] Level 1:colcon.colcon_core.shell:create_environment_hook('imu_tools', 'cmake_prefix_path')
+[1.822s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/imu_tools/hook/cmake_prefix_path.ps1'
+[1.825s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/imu_tools/hook/cmake_prefix_path.dsv'
+[1.826s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/imu_tools/hook/cmake_prefix_path.sh'
+[1.829s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/bin'
+[1.829s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/lib/pkgconfig/imu_tools.pc'
+[1.829s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/lib/python3.10/site-packages'
+[1.830s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/bin'
+[1.830s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/imu_tools/package.ps1'
+[1.833s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/imu_tools/package.dsv'
+[1.834s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/imu_tools/package.sh'
+[1.837s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/imu_tools/package.bash'
+[1.839s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/imu_tools/package.zsh'
+[1.841s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/colcon-core/packages/imu_tools)
+[1.991s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_pipe_test': CMAKE_PREFIX_PATH=/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/imu_tools:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/rviz_imu_plugin:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/imu_filter_madgwick:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/imu_complementary_filter LD_LIBRARY_PATH=/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/lib:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/lib:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/lib:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/rviz_imu_plugin/lib:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/imu_filter_madgwick/lib:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/imu_complementary_filter/lib:/home/ff/ee106a/librealsense/build/Release:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_pipe_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/imu_pipe_test build --build-base /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_pipe_test/build install --record /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_pipe_test/install.log --single-version-externally-managed install_data
+[2.329s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test' for CMake module files
+[2.329s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_pipe_test' returned '0': CMAKE_PREFIX_PATH=/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/imu_tools:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/rviz_imu_plugin:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/imu_filter_madgwick:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/imu_complementary_filter LD_LIBRARY_PATH=/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick/lib:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/rviz_imu_plugin/lib:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/lib:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/rviz_imu_plugin/lib:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/imu_filter_madgwick/lib:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/install/imu_complementary_filter/lib:/home/ff/ee106a/librealsense/build/Release:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib PYTHONPATH=/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_pipe_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/imu_pipe_test build --build-base /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_pipe_test/build install --record /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_pipe_test/install.log --single-version-externally-managed install_data
+[2.331s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test' for CMake config files
+[2.337s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test/lib'
+[2.337s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test/bin'
+[2.338s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test/lib/pkgconfig/imu_pipe_test.pc'
+[2.338s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test/lib/python3.10/site-packages'
+[2.338s] Level 1:colcon.colcon_core.shell:create_environment_hook('imu_pipe_test', 'pythonpath')
+[2.339s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test/share/imu_pipe_test/hook/pythonpath.ps1'
+[2.342s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test/share/imu_pipe_test/hook/pythonpath.dsv'
+[2.344s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test/share/imu_pipe_test/hook/pythonpath.sh'
+[2.347s] Level 1:colcon.colcon_core.environment:checking '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test/bin'
+[2.347s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(imu_pipe_test)
+[2.348s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test/share/imu_pipe_test/package.ps1'
+[2.351s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test/share/imu_pipe_test/package.dsv'
+[2.353s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test/share/imu_pipe_test/package.sh'
+[2.355s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test/share/imu_pipe_test/package.bash'
+[2.358s] INFO:colcon.colcon_core.shell:Creating package script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test/share/imu_pipe_test/package.zsh'
+[2.360s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_pipe_test/share/colcon-core/packages/imu_pipe_test)
+[2.362s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.362s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.363s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.363s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.383s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[2.383s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.384s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.384s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.545s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.545s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/local_setup.ps1'
+[2.548s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/_local_setup_util_ps1.py'
+[2.552s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/setup.ps1'
+[2.560s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/local_setup.sh'
+[2.563s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/_local_setup_util_sh.py'
+[2.566s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/setup.sh'
+[2.576s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/local_setup.bash'
+[2.579s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/setup.bash'
+[2.589s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/local_setup.zsh'
+[2.591s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/setup.zsh'

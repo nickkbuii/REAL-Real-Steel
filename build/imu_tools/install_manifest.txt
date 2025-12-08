@@ -1,0 +1,15 @@
+/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/ament_index/resource_index/package_run_dependencies/imu_tools
+/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/ament_index/resource_index/parent_prefix_path/imu_tools
+/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/imu_tools/environment/ament_prefix_path.sh
+/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/imu_tools/environment/ament_prefix_path.dsv
+/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/imu_tools/environment/path.sh
+/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/imu_tools/environment/path.dsv
+/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/imu_tools/local_setup.bash
+/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/imu_tools/local_setup.sh
+/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/imu_tools/local_setup.zsh
+/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/imu_tools/local_setup.dsv
+/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/imu_tools/package.dsv
+/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/ament_index/resource_index/packages/imu_tools
+/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/imu_tools/cmake/imu_toolsConfig.cmake
+/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/imu_tools/cmake/imu_toolsConfig-version.cmake
+/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_tools/share/imu_tools/package.xml

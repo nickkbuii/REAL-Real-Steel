@@ -1,0 +1,3 @@
+[console_scripts]
+serial_imu_bridge = imu_pipe_test.serial_imu_bridge:main
+
