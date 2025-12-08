@@ -1,6 +1,6 @@
-/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin/rviz_imu_plugin_autogen/UVLADIE3JM/moc_mag_display.cpp: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/mag_display.h \
-  /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin/rviz_imu_plugin_autogen/moc_predefs.h \
-  /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/mag_visual.h \
+/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/rviz_imu_plugin/rviz_imu_plugin_autogen/UVLADIE3JM/moc_mag_display.cpp: /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/mag_display.h \
+  /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/rviz_imu_plugin/rviz_imu_plugin_autogen/moc_predefs.h \
+  /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/mag_visual.h \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
   /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp \

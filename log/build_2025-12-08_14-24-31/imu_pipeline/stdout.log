@@ -1,0 +1,39 @@
+running egg_info
+creating ../../build/imu_pipeline/imu_pipeline.egg-info
+writing ../../build/imu_pipeline/imu_pipeline.egg-info/PKG-INFO
+writing dependency_links to ../../build/imu_pipeline/imu_pipeline.egg-info/dependency_links.txt
+writing entry points to ../../build/imu_pipeline/imu_pipeline.egg-info/entry_points.txt
+writing requirements to ../../build/imu_pipeline/imu_pipeline.egg-info/requires.txt
+writing top-level names to ../../build/imu_pipeline/imu_pipeline.egg-info/top_level.txt
+writing manifest file '../../build/imu_pipeline/imu_pipeline.egg-info/SOURCES.txt'
+reading manifest file '../../build/imu_pipeline/imu_pipeline.egg-info/SOURCES.txt'
+writing manifest file '../../build/imu_pipeline/imu_pipeline.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/imu_pipeline/build
+creating /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/imu_pipeline/build/lib
+creating /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/imu_pipeline/build/lib/imu_pipeline
+copying imu_pipeline/__init__.py -> /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/imu_pipeline/build/lib/imu_pipeline
+copying imu_pipeline/ble_imu_bridge.py -> /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/imu_pipeline/build/lib/imu_pipeline
+copying imu_pipeline/serial_imu_bridge.py -> /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/imu_pipeline/build/lib/imu_pipeline
+running install
+running install_lib
+creating /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/install/imu_pipeline/lib/python3.10/site-packages/imu_pipeline
+copying /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/imu_pipeline/build/lib/imu_pipeline/__init__.py -> /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/install/imu_pipeline/lib/python3.10/site-packages/imu_pipeline
+copying /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/imu_pipeline/build/lib/imu_pipeline/ble_imu_bridge.py -> /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/install/imu_pipeline/lib/python3.10/site-packages/imu_pipeline
+copying /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/imu_pipeline/build/lib/imu_pipeline/serial_imu_bridge.py -> /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/install/imu_pipeline/lib/python3.10/site-packages/imu_pipeline
+byte-compiling /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/install/imu_pipeline/lib/python3.10/site-packages/imu_pipeline/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/install/imu_pipeline/lib/python3.10/site-packages/imu_pipeline/ble_imu_bridge.py to ble_imu_bridge.cpython-310.pyc
+byte-compiling /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/install/imu_pipeline/lib/python3.10/site-packages/imu_pipeline/serial_imu_bridge.py to serial_imu_bridge.cpython-310.pyc
+running install_data
+creating /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/install/imu_pipeline/share/ament_index
+creating /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/install/imu_pipeline/share/ament_index/resource_index
+creating /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/install/imu_pipeline/share/ament_index/resource_index/packages
+copying resource/imu_pipeline -> /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/install/imu_pipeline/share/ament_index/resource_index/packages
+copying package.xml -> /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/install/imu_pipeline/share/imu_pipeline
+running install_egg_info
+Copying ../../build/imu_pipeline/imu_pipeline.egg-info to /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/install/imu_pipeline/lib/python3.10/site-packages/imu_pipeline-0.0.0-py3.10.egg-info
+running install_scripts
+Installing ble_imu_bridge script to /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/install/imu_pipeline/lib/imu_pipeline
+Installing serial_imu_bridge script to /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/install/imu_pipeline/lib/imu_pipeline
+writing list of installed files to '/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/imu_pipeline/install.log'

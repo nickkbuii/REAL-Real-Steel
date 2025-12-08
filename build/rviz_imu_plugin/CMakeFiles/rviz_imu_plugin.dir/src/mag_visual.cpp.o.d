@@ -1,5 +1,5 @@
 CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.o: \
- /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/mag_visual.cpp \
+ /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/mag_visual.cpp \
  /usr/include/stdc-predef.h \
  /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreSceneNode.h \
  /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgrePrerequisites.h \
@@ -334,7 +334,7 @@ CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.o: \
  /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreConfigOptionMap.h \
  /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreLodListener.h \
  /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreNameGenerator.h \
- /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/mag_visual.h \
+ /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/mag_visual.h \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/magnetic_field.hpp \
  /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/magnetic_field__struct.hpp \
  /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp \

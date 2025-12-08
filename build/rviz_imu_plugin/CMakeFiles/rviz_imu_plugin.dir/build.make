@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin
+CMAKE_SOURCE_DIR = /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin
+CMAKE_BINARY_DIR = /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/rviz_imu_plugin
 
 # Include any dependencies generated for this target.
 include CMakeFiles/rviz_imu_plugin.dir/depend.make
@@ -72,100 +72,100 @@ include CMakeFiles/rviz_imu_plugin.dir/flags.make
 CMakeFiles/rviz_imu_plugin.dir/rviz_imu_plugin_autogen/mocs_compilation.cpp.o: CMakeFiles/rviz_imu_plugin.dir/flags.make
 CMakeFiles/rviz_imu_plugin.dir/rviz_imu_plugin_autogen/mocs_compilation.cpp.o: rviz_imu_plugin_autogen/mocs_compilation.cpp
 CMakeFiles/rviz_imu_plugin.dir/rviz_imu_plugin_autogen/mocs_compilation.cpp.o: CMakeFiles/rviz_imu_plugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/rviz_imu_plugin.dir/rviz_imu_plugin_autogen/mocs_compilation.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rviz_imu_plugin.dir/rviz_imu_plugin_autogen/mocs_compilation.cpp.o -MF CMakeFiles/rviz_imu_plugin.dir/rviz_imu_plugin_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/rviz_imu_plugin.dir/rviz_imu_plugin_autogen/mocs_compilation.cpp.o -c /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin/rviz_imu_plugin_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/rviz_imu_plugin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/rviz_imu_plugin.dir/rviz_imu_plugin_autogen/mocs_compilation.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rviz_imu_plugin.dir/rviz_imu_plugin_autogen/mocs_compilation.cpp.o -MF CMakeFiles/rviz_imu_plugin.dir/rviz_imu_plugin_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/rviz_imu_plugin.dir/rviz_imu_plugin_autogen/mocs_compilation.cpp.o -c /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/rviz_imu_plugin/rviz_imu_plugin_autogen/mocs_compilation.cpp
 
 CMakeFiles/rviz_imu_plugin.dir/rviz_imu_plugin_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rviz_imu_plugin.dir/rviz_imu_plugin_autogen/mocs_compilation.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin/rviz_imu_plugin_autogen/mocs_compilation.cpp > CMakeFiles/rviz_imu_plugin.dir/rviz_imu_plugin_autogen/mocs_compilation.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/rviz_imu_plugin/rviz_imu_plugin_autogen/mocs_compilation.cpp > CMakeFiles/rviz_imu_plugin.dir/rviz_imu_plugin_autogen/mocs_compilation.cpp.i
 
 CMakeFiles/rviz_imu_plugin.dir/rviz_imu_plugin_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rviz_imu_plugin.dir/rviz_imu_plugin_autogen/mocs_compilation.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin/rviz_imu_plugin_autogen/mocs_compilation.cpp -o CMakeFiles/rviz_imu_plugin.dir/rviz_imu_plugin_autogen/mocs_compilation.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/rviz_imu_plugin/rviz_imu_plugin_autogen/mocs_compilation.cpp -o CMakeFiles/rviz_imu_plugin.dir/rviz_imu_plugin_autogen/mocs_compilation.cpp.s
 
 CMakeFiles/rviz_imu_plugin.dir/src/imu_display.cpp.o: CMakeFiles/rviz_imu_plugin.dir/flags.make
-CMakeFiles/rviz_imu_plugin.dir/src/imu_display.cpp.o: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_display.cpp
+CMakeFiles/rviz_imu_plugin.dir/src/imu_display.cpp.o: /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_display.cpp
 CMakeFiles/rviz_imu_plugin.dir/src/imu_display.cpp.o: CMakeFiles/rviz_imu_plugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/rviz_imu_plugin.dir/src/imu_display.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rviz_imu_plugin.dir/src/imu_display.cpp.o -MF CMakeFiles/rviz_imu_plugin.dir/src/imu_display.cpp.o.d -o CMakeFiles/rviz_imu_plugin.dir/src/imu_display.cpp.o -c /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_display.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/rviz_imu_plugin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/rviz_imu_plugin.dir/src/imu_display.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rviz_imu_plugin.dir/src/imu_display.cpp.o -MF CMakeFiles/rviz_imu_plugin.dir/src/imu_display.cpp.o.d -o CMakeFiles/rviz_imu_plugin.dir/src/imu_display.cpp.o -c /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_display.cpp
 
 CMakeFiles/rviz_imu_plugin.dir/src/imu_display.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rviz_imu_plugin.dir/src/imu_display.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_display.cpp > CMakeFiles/rviz_imu_plugin.dir/src/imu_display.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_display.cpp > CMakeFiles/rviz_imu_plugin.dir/src/imu_display.cpp.i
 
 CMakeFiles/rviz_imu_plugin.dir/src/imu_display.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rviz_imu_plugin.dir/src/imu_display.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_display.cpp -o CMakeFiles/rviz_imu_plugin.dir/src/imu_display.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_display.cpp -o CMakeFiles/rviz_imu_plugin.dir/src/imu_display.cpp.s
 
 CMakeFiles/rviz_imu_plugin.dir/src/imu_orientation_visual.cpp.o: CMakeFiles/rviz_imu_plugin.dir/flags.make
-CMakeFiles/rviz_imu_plugin.dir/src/imu_orientation_visual.cpp.o: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_orientation_visual.cpp
+CMakeFiles/rviz_imu_plugin.dir/src/imu_orientation_visual.cpp.o: /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_orientation_visual.cpp
 CMakeFiles/rviz_imu_plugin.dir/src/imu_orientation_visual.cpp.o: CMakeFiles/rviz_imu_plugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/rviz_imu_plugin.dir/src/imu_orientation_visual.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rviz_imu_plugin.dir/src/imu_orientation_visual.cpp.o -MF CMakeFiles/rviz_imu_plugin.dir/src/imu_orientation_visual.cpp.o.d -o CMakeFiles/rviz_imu_plugin.dir/src/imu_orientation_visual.cpp.o -c /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_orientation_visual.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/rviz_imu_plugin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/rviz_imu_plugin.dir/src/imu_orientation_visual.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rviz_imu_plugin.dir/src/imu_orientation_visual.cpp.o -MF CMakeFiles/rviz_imu_plugin.dir/src/imu_orientation_visual.cpp.o.d -o CMakeFiles/rviz_imu_plugin.dir/src/imu_orientation_visual.cpp.o -c /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_orientation_visual.cpp
 
 CMakeFiles/rviz_imu_plugin.dir/src/imu_orientation_visual.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rviz_imu_plugin.dir/src/imu_orientation_visual.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_orientation_visual.cpp > CMakeFiles/rviz_imu_plugin.dir/src/imu_orientation_visual.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_orientation_visual.cpp > CMakeFiles/rviz_imu_plugin.dir/src/imu_orientation_visual.cpp.i
 
 CMakeFiles/rviz_imu_plugin.dir/src/imu_orientation_visual.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rviz_imu_plugin.dir/src/imu_orientation_visual.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_orientation_visual.cpp -o CMakeFiles/rviz_imu_plugin.dir/src/imu_orientation_visual.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_orientation_visual.cpp -o CMakeFiles/rviz_imu_plugin.dir/src/imu_orientation_visual.cpp.s
 
 CMakeFiles/rviz_imu_plugin.dir/src/imu_axes_visual.cpp.o: CMakeFiles/rviz_imu_plugin.dir/flags.make
-CMakeFiles/rviz_imu_plugin.dir/src/imu_axes_visual.cpp.o: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_axes_visual.cpp
+CMakeFiles/rviz_imu_plugin.dir/src/imu_axes_visual.cpp.o: /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_axes_visual.cpp
 CMakeFiles/rviz_imu_plugin.dir/src/imu_axes_visual.cpp.o: CMakeFiles/rviz_imu_plugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/rviz_imu_plugin.dir/src/imu_axes_visual.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rviz_imu_plugin.dir/src/imu_axes_visual.cpp.o -MF CMakeFiles/rviz_imu_plugin.dir/src/imu_axes_visual.cpp.o.d -o CMakeFiles/rviz_imu_plugin.dir/src/imu_axes_visual.cpp.o -c /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_axes_visual.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/rviz_imu_plugin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/rviz_imu_plugin.dir/src/imu_axes_visual.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rviz_imu_plugin.dir/src/imu_axes_visual.cpp.o -MF CMakeFiles/rviz_imu_plugin.dir/src/imu_axes_visual.cpp.o.d -o CMakeFiles/rviz_imu_plugin.dir/src/imu_axes_visual.cpp.o -c /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_axes_visual.cpp
 
 CMakeFiles/rviz_imu_plugin.dir/src/imu_axes_visual.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rviz_imu_plugin.dir/src/imu_axes_visual.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_axes_visual.cpp > CMakeFiles/rviz_imu_plugin.dir/src/imu_axes_visual.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_axes_visual.cpp > CMakeFiles/rviz_imu_plugin.dir/src/imu_axes_visual.cpp.i
 
 CMakeFiles/rviz_imu_plugin.dir/src/imu_axes_visual.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rviz_imu_plugin.dir/src/imu_axes_visual.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_axes_visual.cpp -o CMakeFiles/rviz_imu_plugin.dir/src/imu_axes_visual.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_axes_visual.cpp -o CMakeFiles/rviz_imu_plugin.dir/src/imu_axes_visual.cpp.s
 
 CMakeFiles/rviz_imu_plugin.dir/src/imu_acc_visual.cpp.o: CMakeFiles/rviz_imu_plugin.dir/flags.make
-CMakeFiles/rviz_imu_plugin.dir/src/imu_acc_visual.cpp.o: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_acc_visual.cpp
+CMakeFiles/rviz_imu_plugin.dir/src/imu_acc_visual.cpp.o: /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_acc_visual.cpp
 CMakeFiles/rviz_imu_plugin.dir/src/imu_acc_visual.cpp.o: CMakeFiles/rviz_imu_plugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/rviz_imu_plugin.dir/src/imu_acc_visual.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rviz_imu_plugin.dir/src/imu_acc_visual.cpp.o -MF CMakeFiles/rviz_imu_plugin.dir/src/imu_acc_visual.cpp.o.d -o CMakeFiles/rviz_imu_plugin.dir/src/imu_acc_visual.cpp.o -c /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_acc_visual.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/rviz_imu_plugin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/rviz_imu_plugin.dir/src/imu_acc_visual.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rviz_imu_plugin.dir/src/imu_acc_visual.cpp.o -MF CMakeFiles/rviz_imu_plugin.dir/src/imu_acc_visual.cpp.o.d -o CMakeFiles/rviz_imu_plugin.dir/src/imu_acc_visual.cpp.o -c /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_acc_visual.cpp
 
 CMakeFiles/rviz_imu_plugin.dir/src/imu_acc_visual.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rviz_imu_plugin.dir/src/imu_acc_visual.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_acc_visual.cpp > CMakeFiles/rviz_imu_plugin.dir/src/imu_acc_visual.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_acc_visual.cpp > CMakeFiles/rviz_imu_plugin.dir/src/imu_acc_visual.cpp.i
 
 CMakeFiles/rviz_imu_plugin.dir/src/imu_acc_visual.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rviz_imu_plugin.dir/src/imu_acc_visual.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_acc_visual.cpp -o CMakeFiles/rviz_imu_plugin.dir/src/imu_acc_visual.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_acc_visual.cpp -o CMakeFiles/rviz_imu_plugin.dir/src/imu_acc_visual.cpp.s
 
 CMakeFiles/rviz_imu_plugin.dir/src/mag_display.cpp.o: CMakeFiles/rviz_imu_plugin.dir/flags.make
-CMakeFiles/rviz_imu_plugin.dir/src/mag_display.cpp.o: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/mag_display.cpp
+CMakeFiles/rviz_imu_plugin.dir/src/mag_display.cpp.o: /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/mag_display.cpp
 CMakeFiles/rviz_imu_plugin.dir/src/mag_display.cpp.o: CMakeFiles/rviz_imu_plugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/rviz_imu_plugin.dir/src/mag_display.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rviz_imu_plugin.dir/src/mag_display.cpp.o -MF CMakeFiles/rviz_imu_plugin.dir/src/mag_display.cpp.o.d -o CMakeFiles/rviz_imu_plugin.dir/src/mag_display.cpp.o -c /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/mag_display.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/rviz_imu_plugin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/rviz_imu_plugin.dir/src/mag_display.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rviz_imu_plugin.dir/src/mag_display.cpp.o -MF CMakeFiles/rviz_imu_plugin.dir/src/mag_display.cpp.o.d -o CMakeFiles/rviz_imu_plugin.dir/src/mag_display.cpp.o -c /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/mag_display.cpp
 
 CMakeFiles/rviz_imu_plugin.dir/src/mag_display.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rviz_imu_plugin.dir/src/mag_display.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/mag_display.cpp > CMakeFiles/rviz_imu_plugin.dir/src/mag_display.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/mag_display.cpp > CMakeFiles/rviz_imu_plugin.dir/src/mag_display.cpp.i
 
 CMakeFiles/rviz_imu_plugin.dir/src/mag_display.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rviz_imu_plugin.dir/src/mag_display.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/mag_display.cpp -o CMakeFiles/rviz_imu_plugin.dir/src/mag_display.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/mag_display.cpp -o CMakeFiles/rviz_imu_plugin.dir/src/mag_display.cpp.s
 
 CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.o: CMakeFiles/rviz_imu_plugin.dir/flags.make
-CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.o: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/mag_visual.cpp
+CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.o: /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/mag_visual.cpp
 CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.o: CMakeFiles/rviz_imu_plugin.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.o -MF CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.o.d -o CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.o -c /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/mag_visual.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/rviz_imu_plugin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.o -MF CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.o.d -o CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.o -c /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/mag_visual.cpp
 
 CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/mag_visual.cpp > CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/mag_visual.cpp > CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.i
 
 CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/mag_visual.cpp -o CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/mag_visual.cpp -o CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.s
 
 # Object files for target rviz_imu_plugin
 rviz_imu_plugin_OBJECTS = \
@@ -334,7 +334,7 @@ librviz_imu_plugin.so: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.1.0
 librviz_imu_plugin.so: /usr/lib/x86_64-linux-gnu/libtinyxml.so
 librviz_imu_plugin.so: /usr/lib/x86_64-linux-gnu/libyaml-cpp.so.0.7.0
 librviz_imu_plugin.so: CMakeFiles/rviz_imu_plugin.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX shared library librviz_imu_plugin.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/rviz_imu_plugin/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX shared library librviz_imu_plugin.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rviz_imu_plugin.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -346,6 +346,6 @@ CMakeFiles/rviz_imu_plugin.dir/clean:
 .PHONY : CMakeFiles/rviz_imu_plugin.dir/clean
 
 CMakeFiles/rviz_imu_plugin.dir/depend:
-	cd /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin/CMakeFiles/rviz_imu_plugin.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/rviz_imu_plugin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/rviz_imu_plugin /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/rviz_imu_plugin /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/rviz_imu_plugin/CMakeFiles/rviz_imu_plugin.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/rviz_imu_plugin.dir/depend
 

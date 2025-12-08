@@ -1,8 +1,8 @@
-# Install script for directory: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/imu_filter_madgwick/test
+# Install script for directory: /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/imu_filter_madgwick/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_filter_madgwick")
+  set(CMAKE_INSTALL_PREFIX "/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/install/imu_filter_madgwick")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -44,7 +44,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_filter_madgwick/gtest/cmake_install.cmake")
+  include("/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/imu_filter_madgwick/gtest/cmake_install.cmake")
 
 endif()
 

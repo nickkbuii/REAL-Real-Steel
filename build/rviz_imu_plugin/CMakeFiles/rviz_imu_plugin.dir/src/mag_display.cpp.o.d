@@ -1,7 +1,7 @@
 CMakeFiles/rviz_imu_plugin.dir/src/mag_display.cpp.o: \
- /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/mag_display.cpp \
+ /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/mag_display.cpp \
  /usr/include/stdc-predef.h \
- /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/mag_display.h \
+ /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/mag_display.h \
  /opt/ros/humble/include/message_filters/message_filters/subscriber.h \
  /usr/include/c++/11/stdexcept /usr/include/c++/11/exception \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
@@ -953,7 +953,7 @@ CMakeFiles/rviz_imu_plugin.dir/src/mag_display.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
  /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h \
  /opt/ros/humble/include/rviz_common/rviz_common/display_group.hpp \
- /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/mag_visual.h \
+ /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/mag_visual.h \
  /opt/ros/humble/include/rviz_common/rviz_common/logging.hpp \
  /opt/ros/humble/include/rviz_rendering/rviz_rendering/logging_handler.hpp \
  /opt/ros/humble/include/pluginlib/pluginlib/class_list_macros.hpp \

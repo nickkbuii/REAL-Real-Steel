@@ -7,7 +7,7 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../../../../src/imu_tools/rviz_imu_plugin/src/imu_display.h"
+#include "../../../../imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_display.h"
 #include <QtCore/qbytearray.h>
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/imu_tools
+CMAKE_SOURCE_DIR = /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/imu_tools
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_tools
+CMAKE_BINARY_DIR = /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/imu_tools
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_tools/CMakeFiles /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_tools//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/imu_tools/CMakeFiles /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/imu_tools//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_tools/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/imu_tools/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

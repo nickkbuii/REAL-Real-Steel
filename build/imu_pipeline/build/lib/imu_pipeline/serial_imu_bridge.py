@@ -4,45 +4,99 @@ from sensor_msgs.msg import Imu
 import serial
 import time
 
-PORT = "/dev/ttyACM0"
-BAUD = 115200
-
 
 class SerialIMUNode(Node):
     def __init__(self):
         super().__init__("serial_imu_bridge")
 
+        # ---------- ROS PARAMETERS ----------
+        self.declare_parameter("port", "/dev/ttyACM0")
+        self.declare_parameter("baud", 115200)
+
+        PORT = self.get_parameter("port").get_parameter_value().string_value
+        BAUD = self.get_parameter("baud").get_parameter_value().integer_value
+
+        # ---------- PUBLISHERS ----------
         self.pub_upper = self.create_publisher(Imu, "upper_imu/data_raw", 10)
         self.pub_fore  = self.create_publisher(Imu, "forearm_imu/data_raw", 10)
 
-        self.ser = serial.Serial(PORT, BAUD, timeout=0.1)
-        time.sleep(2)
+        # ---------- SERIAL ----------
+        try:
+            self.ser = serial.Serial(PORT, BAUD, timeout=0.1)
+            time.sleep(2.0)
+            self.get_logger().info(f"Connected to {PORT} @ {BAUD}")
+        except Exception as e:
+            self.get_logger().fatal(f"FAILED to open serial port: {e}")
+            raise SystemExit
 
-        self.get_logger().info(f"Connected to {PORT} @ {BAUD}")
-
+        # ---------- TIMER (200 Hz) ----------
         self.timer = self.create_timer(0.005, self.read_serial)
 
+    # ----------------------------------------------------
+    def parse_packet(self, line):
+        """
+        Handles BOTH of these formats:
+
+        CSV:
+        -0.21,0.02,9.80,0.00,0.00,0.00,-0.01,-0.05,9.82,0.00,0.00,0.00
+
+        LABELED:
+        ax1:-0.21 ay1:0.02 az1:9.80 gx1:-0.00 ...
+        """
+
+        # --- Case 1: CSV ---
+        if "," in line:
+            parts = line.split(",")
+            if len(parts) != 12:
+                return None
+            try:
+                return list(map(float, parts))
+            except:
+                return None
+
+        # --- Case 2: Labeled key:value ---
+        clean = line.replace(":", " ").split()
+        vals = []
+
+        for token in clean:
+            try:
+                vals.append(float(token))
+            except:
+                pass
+
+        if len(vals) != 12:
+            return None
+
+        return vals
+
+    # ----------------------------------------------------
     def read_serial(self):
-        line = self.ser.readline().decode("utf-8").strip()
-        if not line:
+        try:
+            raw = self.ser.readline().decode("utf-8", errors="ignore").strip()
+        except:
             return
 
-        parts = line.split(",")
-        if len(parts) != 12:
-            self.get_logger().warn(f"Bad packet: {line}")
+        if not raw:
+            return
+
+        vals = self.parse_packet(raw)
+
+        if vals is None:
+            self.get_logger().warn(f"Bad packet: {raw}")
             return
 
         try:
-            vals = list(map(float, parts))
+            (
+                ax1, ay1, az1, gx1, gy1, gz1,
+                ax2, ay2, az2, gx2, gy2, gz2
+            ) = vals
         except:
-            self.get_logger().warn(f"Parse fail: {line}")
+            self.get_logger().warn(f"Parse error: {raw}")
             return
-
-        ax1, ay1, az1, gx1, gy1, gz1, ax2, ay2, az2, gx2, gy2, gz2 = vals
 
         t = self.get_clock().now().to_msg()
 
-        # Upper IMU msg
+        # ---------- Upper IMU ----------
         imu1 = Imu()
         imu1.header.stamp = t
         imu1.header.frame_id = "upper_imu"
@@ -54,7 +108,7 @@ class SerialIMUNode(Node):
         imu1.angular_velocity.z = gz1
         self.pub_upper.publish(imu1)
 
-        # Forearm IMU msg
+        # ---------- Forearm IMU ----------
         imu2 = Imu()
         imu2.header.stamp = t
         imu2.header.frame_id = "forearm_imu"
@@ -67,6 +121,7 @@ class SerialIMUNode(Node):
         self.pub_fore.publish(imu2)
 
 
+# --------------------------------------------------------
 def main(args=None):
     rclpy.init(args=args)
     node = SerialIMUNode()

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin
+CMAKE_SOURCE_DIR = /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin
+CMAKE_BINARY_DIR = /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/rviz_imu_plugin
 
 # Utility rule file for uninstall.
 
@@ -78,6 +78,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/rviz_imu_plugin/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/rviz_imu_plugin && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/rviz_imu_plugin /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/rviz_imu_plugin /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/rviz_imu_plugin/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

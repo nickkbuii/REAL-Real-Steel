@@ -136,7 +136,7 @@ CMakeFiles/rviz_imu_plugin.dir/rviz_imu_plugin_autogen/mocs_compilation.cpp.o: r
   /usr/include/c++/11/backward/auto_ptr.h \
   /usr/include/c++/11/pstl/glue_memory_defs.h \
   /usr/include/c++/11/pstl/execution_defs.h \
-  /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_display.h \
+  /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_display.h \
   /opt/ros/humble/include/message_filters/message_filters/subscriber.h \
   /usr/include/c++/11/stdexcept \
   /usr/include/c++/11/string \
@@ -1027,19 +1027,19 @@ CMakeFiles/rviz_imu_plugin.dir/rviz_imu_plugin_autogen/mocs_compilation.cpp.o: r
   /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h \
   /opt/ros/humble/include/rviz_common/rviz_common/display_group.hpp \
-  /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_axes_visual.h \
-  /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_orientation_visual.h \
-  /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_acc_visual.h \
+  /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_axes_visual.h \
+  /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_orientation_visual.h \
+  /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_acc_visual.h \
   rviz_imu_plugin_autogen/UVLADIE3JM/moc_mag_display.cpp \
-  /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/mag_display.h \
+  /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/mag_display.h \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/magnetic_field.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/magnetic_field__struct.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/magnetic_field__builder.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/magnetic_field__traits.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/magnetic_field__type_support.hpp \
-  /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/mag_visual.h
+  /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/mag_visual.h
 
-CMakeFiles/rviz_imu_plugin.dir/src/imu_acc_visual.cpp.o: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_acc_visual.cpp \
+CMakeFiles/rviz_imu_plugin.dir/src/imu_acc_visual.cpp.o: /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_acc_visual.cpp \
   /usr/include/stdc-predef.h \
   /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreSceneNode.h \
   /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgrePrerequisites.h \
@@ -1434,7 +1434,7 @@ CMakeFiles/rviz_imu_plugin.dir/src/imu_acc_visual.cpp.o: /home/cc/ee106a/fa25/cl
   /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreConfigOptionMap.h \
   /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreLodListener.h \
   /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreNameGenerator.h \
-  /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_acc_visual.h \
+  /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_acc_visual.h \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/imu.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__struct.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp \
@@ -1638,7 +1638,7 @@ CMakeFiles/rviz_imu_plugin.dir/src/imu_acc_visual.cpp.o: /home/cc/ee106a/fa25/cl
   /opt/ros/humble/include/rviz_rendering/rviz_rendering/objects/object.hpp \
   /opt/ros/humble/include/rviz_rendering/rviz_rendering/visibility_control.hpp
 
-CMakeFiles/rviz_imu_plugin.dir/src/imu_axes_visual.cpp.o: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_axes_visual.cpp \
+CMakeFiles/rviz_imu_plugin.dir/src/imu_axes_visual.cpp.o: /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_axes_visual.cpp \
   /usr/include/stdc-predef.h \
   /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreSceneNode.h \
   /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgrePrerequisites.h \
@@ -2033,7 +2033,7 @@ CMakeFiles/rviz_imu_plugin.dir/src/imu_axes_visual.cpp.o: /home/cc/ee106a/fa25/c
   /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreConfigOptionMap.h \
   /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreLodListener.h \
   /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreNameGenerator.h \
-  /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_axes_visual.h \
+  /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_axes_visual.h \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/imu.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__struct.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp \
@@ -2560,9 +2560,9 @@ CMakeFiles/rviz_imu_plugin.dir/src/imu_axes_visual.cpp.o: /home/cc/ee106a/fa25/c
   /opt/ros/humble/include/rviz_common/rviz_common/logging.hpp \
   /opt/ros/humble/include/rviz_rendering/rviz_rendering/logging_handler.hpp
 
-CMakeFiles/rviz_imu_plugin.dir/src/imu_display.cpp.o: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_display.cpp \
+CMakeFiles/rviz_imu_plugin.dir/src/imu_display.cpp.o: /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_display.cpp \
   /usr/include/stdc-predef.h \
-  /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_display.h \
+  /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_display.h \
   /opt/ros/humble/include/message_filters/message_filters/subscriber.h \
   /usr/include/c++/11/stdexcept \
   /usr/include/c++/11/exception \
@@ -3585,9 +3585,9 @@ CMakeFiles/rviz_imu_plugin.dir/src/imu_display.cpp.o: /home/cc/ee106a/fa25/class
   /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h \
   /opt/ros/humble/include/rviz_common/rviz_common/display_group.hpp \
-  /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_axes_visual.h \
-  /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_orientation_visual.h \
-  /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_acc_visual.h \
+  /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_axes_visual.h \
+  /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_orientation_visual.h \
+  /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_acc_visual.h \
   /opt/ros/humble/include/rviz_common/rviz_common/logging.hpp \
   /opt/ros/humble/include/rviz_rendering/rviz_rendering/logging_handler.hpp \
   /opt/ros/humble/include/pluginlib/pluginlib/class_list_macros.hpp \
@@ -3600,7 +3600,7 @@ CMakeFiles/rviz_imu_plugin.dir/src/imu_display.cpp.o: /home/cc/ee106a/fa25/class
   /opt/ros/humble/include/class_loader/class_loader/meta_object.hpp \
   /opt/ros/humble/include/class_loader/class_loader/register_macro.hpp
 
-CMakeFiles/rviz_imu_plugin.dir/src/imu_orientation_visual.cpp.o: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_orientation_visual.cpp \
+CMakeFiles/rviz_imu_plugin.dir/src/imu_orientation_visual.cpp.o: /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_orientation_visual.cpp \
   /usr/include/stdc-predef.h \
   /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreSceneNode.h \
   /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgrePrerequisites.h \
@@ -3995,7 +3995,7 @@ CMakeFiles/rviz_imu_plugin.dir/src/imu_orientation_visual.cpp.o: /home/cc/ee106a
   /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreConfigOptionMap.h \
   /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreLodListener.h \
   /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreNameGenerator.h \
-  /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_orientation_visual.h \
+  /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_orientation_visual.h \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/imu.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/imu__struct.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp \
@@ -4522,9 +4522,9 @@ CMakeFiles/rviz_imu_plugin.dir/src/imu_orientation_visual.cpp.o: /home/cc/ee106a
   /opt/ros/humble/include/rviz_common/rviz_common/logging.hpp \
   /opt/ros/humble/include/rviz_rendering/rviz_rendering/logging_handler.hpp
 
-CMakeFiles/rviz_imu_plugin.dir/src/mag_display.cpp.o: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/mag_display.cpp \
+CMakeFiles/rviz_imu_plugin.dir/src/mag_display.cpp.o: /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/mag_display.cpp \
   /usr/include/stdc-predef.h \
-  /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/mag_display.h \
+  /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/mag_display.h \
   /opt/ros/humble/include/message_filters/message_filters/subscriber.h \
   /usr/include/c++/11/stdexcept \
   /usr/include/c++/11/exception \
@@ -5547,7 +5547,7 @@ CMakeFiles/rviz_imu_plugin.dir/src/mag_display.cpp.o: /home/cc/ee106a/fa25/class
   /usr/include/x86_64-linux-gnu/qt5/QtGui/QColor \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qcolor.h \
   /opt/ros/humble/include/rviz_common/rviz_common/display_group.hpp \
-  /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/mag_visual.h \
+  /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/mag_visual.h \
   /opt/ros/humble/include/rviz_common/rviz_common/logging.hpp \
   /opt/ros/humble/include/rviz_rendering/rviz_rendering/logging_handler.hpp \
   /opt/ros/humble/include/pluginlib/pluginlib/class_list_macros.hpp \
@@ -5560,7 +5560,7 @@ CMakeFiles/rviz_imu_plugin.dir/src/mag_display.cpp.o: /home/cc/ee106a/fa25/class
   /opt/ros/humble/include/class_loader/class_loader/meta_object.hpp \
   /opt/ros/humble/include/class_loader/class_loader/register_macro.hpp
 
-CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.o: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/mag_visual.cpp \
+CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.o: /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/mag_visual.cpp \
   /usr/include/stdc-predef.h \
   /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreSceneNode.h \
   /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgrePrerequisites.h \
@@ -5955,7 +5955,7 @@ CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.o: /home/cc/ee106a/fa25/class/
   /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreConfigOptionMap.h \
   /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreLodListener.h \
   /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreNameGenerator.h \
-  /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/mag_visual.h \
+  /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/mag_visual.h \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/magnetic_field.hpp \
   /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/magnetic_field__struct.hpp \
   /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp \
@@ -6158,11 +6158,13 @@ CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.o: /home/cc/ee106a/fa25/class/
   /opt/ros/humble/include/rviz_rendering/rviz_rendering/visibility_control.hpp
 
 
-/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_orientation_visual.cpp:
+/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/mag_display.cpp:
 
 /opt/ros/humble/include/class_loader/class_loader/exceptions.hpp:
 
 /opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp:
+
+/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_display.cpp:
 
 /opt/ros/humble/include/rviz_rendering/rviz_rendering/logging_handler.hpp:
 
@@ -6170,17 +6172,17 @@ CMakeFiles/rviz_imu_plugin.dir/src/mag_visual.cpp.o: /home/cc/ee106a/fa25/class/
 
 /opt/ros/humble/include/rviz_rendering/rviz_rendering/objects/axes.hpp:
 
+/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_axes_visual.cpp:
+
 /opt/ros/humble/include/rviz_rendering/rviz_rendering/objects/object.hpp:
-
-/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_acc_visual.cpp:
-
-/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/mag_visual.h:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/magnetic_field.hpp:
 
+/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/mag_display.h:
+
 rviz_imu_plugin_autogen/UVLADIE3JM/moc_mag_display.cpp:
 
-/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_axes_visual.h:
+/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_acc_visual.h:
 
 /opt/ros/humble/include/rviz_common/rviz_common/properties/float_property.hpp:
 
@@ -6290,9 +6292,13 @@ rviz_imu_plugin_autogen/UVLADIE3JM/moc_mag_display.cpp:
 
 /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreGpuProgramParams.h:
 
+/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_orientation_visual.cpp:
+
 /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/Threading/OgreThreadDefines.h:
 
 /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/Threading/OgreThreadHeaders.h:
+
+/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_axes_visual.h:
 
 /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreStringInterface.h:
 
@@ -6363,8 +6369,6 @@ rviz_imu_plugin_autogen/UVLADIE3JM/moc_mag_display.cpp:
 /opt/ros/humble/include/rviz_common/rviz_common/visibility_control.hpp:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/QMap:
-
-/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_orientation_visual.h:
 
 /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h:
 
@@ -6636,8 +6640,6 @@ rviz_imu_plugin_autogen/UVLADIE3JM/moc_mag_display.cpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__type_support.hpp:
 
-/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_display.cpp:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__traits.hpp:
 
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/get_parameter_types__builder.hpp:
@@ -6884,6 +6886,8 @@ rviz_imu_plugin_autogen/UVLADIE3JM/moc_mag_display.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/environments.h:
 
+/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_acc_visual.cpp:
+
 /usr/include/x86_64-linux-gnu/qt5/QtGui/qimage.h:
 
 /opt/ros/humble/include/tf2/tf2/LinearMath/Quaternion.hpp:
@@ -6915,6 +6919,8 @@ rviz_imu_plugin_autogen/UVLADIE3JM/moc_mag_display.cpp:
 /usr/include/x86_64-linux-gnu/bits/types/sigevent_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/sigval_t.h:
+
+/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/mag_visual.h:
 
 /opt/ros/humble/include/sensor_msgs/sensor_msgs/msg/detail/magnetic_field__traits.hpp:
 
@@ -7022,8 +7028,6 @@ rviz_imu_plugin_autogen/UVLADIE3JM/moc_mag_display.cpp:
 
 /usr/include/c++/11/bits/ostream_insert.h:
 
-/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/mag_display.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
 
 /usr/include/ctype.h:
@@ -7093,12 +7097,6 @@ rviz_imu_plugin_autogen/UVLADIE3JM/moc_mag_display.cpp:
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/get_parameter_types.hpp:
 
 /opt/ros/humble/include/message_filters/message_filters/subscriber.h:
-
-/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_display.h:
-
-/usr/include/asm-generic/int-ll64.h:
-
-/usr/include/c++/11/atomic:
 
 /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreRenderable.h:
 
@@ -7430,9 +7428,15 @@ rviz_imu_plugin_autogen/UVLADIE3JM/moc_imu_display.cpp:
 
 /usr/include/c++/11/cstdlib:
 
+/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_display.h:
+
 /usr/include/c++/11/bits/this_thread_sleep.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
+
+/usr/include/asm-generic/int-ll64.h:
+
+/usr/include/c++/11/atomic:
 
 /opt/ros/humble/include/tf2_ros/tf2_ros/async_buffer_interface.hpp:
 
@@ -7776,6 +7780,8 @@ rviz_imu_plugin_autogen/UVLADIE3JM/moc_imu_display.cpp:
 
 /usr/include/c++/11/bits/stream_iterator.h:
 
+/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/mag_visual.cpp:
+
 /opt/ros/humble/include/rcl/rcl/log_level.h:
 
 /opt/ros/humble/include/rcl/rcl/macros.h:
@@ -7809,8 +7815,6 @@ rviz_imu_plugin_autogen/UVLADIE3JM/moc_imu_display.cpp:
 /opt/ros/humble/include/rcutils/rcutils/types/string_array.h:
 
 /opt/ros/humble/include/rcutils/rcutils/qsort.h:
-
-/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/mag_display.cpp:
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
@@ -7922,6 +7926,8 @@ rviz_imu_plugin_autogen/UVLADIE3JM/moc_imu_display.cpp:
 
 /opt/ros/humble/include/class_loader/class_loader/register_macro.hpp:
 
+/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/imu_pipeline/imu_tools/rviz_imu_plugin/src/imu_orientation_visual.h:
+
 /opt/ros/humble/include/rcl/rcl/timer.h:
 
 /opt/ros/humble/opt/rviz_ogre_vendor/include/OGRE/OgreColourValue.h:
@@ -7935,8 +7941,6 @@ rviz_imu_plugin_autogen/UVLADIE3JM/moc_imu_display.cpp:
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/msg/detail/set_parameters_result__traits.hpp:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/sequence_bound.h:
-
-/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_axes_visual.cpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/wait_set_template.hpp:
 
@@ -8060,8 +8064,6 @@ rviz_imu_plugin_autogen/UVLADIE3JM/moc_imu_display.cpp:
 
 /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp:
 
-/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/imu_acc_visual.h:
-
 /opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/describe_parameters.hpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/logging.hpp:
@@ -8179,8 +8181,6 @@ rviz_imu_plugin_autogen/UVLADIE3JM/moc_imu_display.cpp:
 /opt/ros/humble/include/rclcpp/rclcpp/experimental/create_intra_process_buffer.hpp:
 
 /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/time__struct.hpp:
-
-/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/rviz_imu_plugin/src/mag_visual.cpp:
 
 /opt/ros/humble/include/rclcpp/rclcpp/parameter.hpp:
 
