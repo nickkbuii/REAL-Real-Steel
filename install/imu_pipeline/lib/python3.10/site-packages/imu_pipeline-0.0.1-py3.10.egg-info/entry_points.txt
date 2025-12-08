@@ -1,4 +1,0 @@
-[console_scripts]
-ble_imu_bridge = imu_pipeline.ble_imu_bridge:main
-serial_imu_bridge = imu_pipeline.serial_imu_bridge:main
-

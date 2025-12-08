@@ -1,3 +1,6 @@
 source;share/imu_pipeline/hook/pythonpath.ps1
 source;share/imu_pipeline/hook/pythonpath.dsv
 source;share/imu_pipeline/hook/pythonpath.sh
+source;share/imu_pipeline/hook/ament_prefix_path.ps1
+source;share/imu_pipeline/hook/ament_prefix_path.dsv
+source;share/imu_pipeline/hook/ament_prefix_path.sh

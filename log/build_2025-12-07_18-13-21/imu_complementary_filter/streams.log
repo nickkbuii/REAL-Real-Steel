@@ -1,0 +1,85 @@
+[0.059s] Invoking command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_complementary_filter': CMAKE_PREFIX_PATH=/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/imu_complementary_filter -DCMAKE_INSTALL_PREFIX=/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter
+[0.233s] -- The C compiler identification is GNU 11.4.0
+[0.420s] -- The CXX compiler identification is GNU 11.4.0
+[0.453s] -- Detecting C compiler ABI info
+[0.758s] -- Detecting C compiler ABI info - done
+[0.781s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.782s] -- Detecting C compile features
+[0.782s] -- Detecting C compile features - done
+[0.803s] -- Detecting CXX compiler ABI info
+[1.125s] -- Detecting CXX compiler ABI info - done
+[1.145s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.146s] -- Detecting CXX compile features
+[1.146s] -- Detecting CXX compile features - done
+[1.180s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.466s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.774s] -- Found geometry_msgs: 4.9.0 (/opt/ros/humble/share/geometry_msgs/cmake)
+[1.840s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.853s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.871s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.890s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.917s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.959s] -- Found message_filters: 4.3.8 (/opt/ros/humble/share/message_filters/cmake)
+[2.021s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.025s] -- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.425s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.456s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.502s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.537s] -- Looking for pthread.h
+[2.838s] -- Looking for pthread.h - found
+[2.844s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.168s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.170s] -- Found Threads: TRUE  
+[3.236s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.271s] -- Found tf2: 0.25.16 (/opt/ros/humble/share/tf2/cmake)
+[3.288s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[3.674s] -- Configuring done
+[3.957s] -- Generating done
+[4.056s] -- Build files have been written to: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_complementary_filter
+[4.070s] Invoked command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_complementary_filter' returned '0': CMAKE_PREFIX_PATH=/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/src/imu_tools/imu_complementary_filter -DCMAKE_INSTALL_PREFIX=/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter
+[4.077s] Invoking command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_complementary_filter': CMAKE_PREFIX_PATH=/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --build /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_complementary_filter -- -j32 -l32
+[4.297s] [ 40%] [32mBuilding CXX object CMakeFiles/complementary_filter.dir/src/complementary_filter.cpp.o[0m
+[4.298s] [ 40%] [32mBuilding CXX object CMakeFiles/complementary_filter.dir/src/complementary_filter_ros.cpp.o[0m
+[13.469s] [ 60%] [32m[1mLinking CXX shared library libcomplementary_filter.so[0m
+[14.661s] [ 60%] Built target complementary_filter
+[14.714s] [ 80%] [32mBuilding CXX object CMakeFiles/complementary_filter_node.dir/src/complementary_filter_node.cpp.o[0m
+[16.625s] [100%] [32m[1mLinking CXX executable complementary_filter_node[0m
+[16.999s] [100%] Built target complementary_filter_node
+[17.019s] Invoked command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_complementary_filter' returned '0': CMAKE_PREFIX_PATH=/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --build /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_complementary_filter -- -j32 -l32
+[17.037s] Invoking command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_complementary_filter': CMAKE_PREFIX_PATH=/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --install /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_complementary_filter
+[17.046s] -- Install configuration: ""
+[17.052s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/lib/libcomplementary_filter.so
+[17.240s] -- Set runtime path of "/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/lib/libcomplementary_filter.so" to ""
+[17.247s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/lib/imu_complementary_filter/complementary_filter_node
+[17.272s] -- Set runtime path of "/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/lib/imu_complementary_filter/complementary_filter_node" to ""
+[17.273s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/include
+[17.280s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/include/imu_complementary_filter
+[17.289s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/include/imu_complementary_filter/complementary_filter.h
+[17.299s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/include/imu_complementary_filter/complementary_filter_ros.h
+[17.308s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/launch
+[17.318s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/launch/complementary_filter.launch.py
+[17.331s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/config
+[17.349s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/config/filter_config.yaml
+[17.381s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/environment/library_path.sh
+[17.396s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/environment/library_path.dsv
+[17.414s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/ament_index/resource_index/package_run_dependencies/imu_complementary_filter
+[17.469s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/ament_index/resource_index/parent_prefix_path/imu_complementary_filter
+[17.482s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/environment/ament_prefix_path.sh
+[17.490s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/environment/ament_prefix_path.dsv
+[17.504s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/environment/path.sh
+[17.522s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/environment/path.dsv
+[17.532s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/local_setup.bash
+[17.543s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/local_setup.sh
+[17.555s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/local_setup.zsh
+[17.566s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/local_setup.dsv
+[17.576s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/package.dsv
+[17.592s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/ament_index/resource_index/packages/imu_complementary_filter
+[17.607s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/cmake/export_imu_complementary_filterExport.cmake
+[17.618s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/cmake/export_imu_complementary_filterExport-noconfig.cmake
+[17.628s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/cmake/ament_cmake_export_include_directories-extras.cmake
+[17.637s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/cmake/ament_cmake_export_libraries-extras.cmake
+[17.646s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/cmake/ament_cmake_export_targets-extras.cmake
+[17.656s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/cmake/imu_complementary_filterConfig.cmake
+[17.670s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/cmake/imu_complementary_filterConfig-version.cmake
+[17.684s] -- Installing: /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/install/imu_complementary_filter/share/imu_complementary_filter/package.xml
+[17.698s] Invoked command in '/home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_complementary_filter' returned '0': CMAKE_PREFIX_PATH=/home/ff/ee106a/robot_workspaces/ur/install/ur7e_utils:/opt/ros/humble /usr/bin/cmake --install /home/cc/ee106a/fa25/class/ee106a-abg/REAL-Real-Steel/build/imu_complementary_filter
