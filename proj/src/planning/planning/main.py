@@ -12,7 +12,8 @@ from python_qt_binding.QtWidgets import QPushButton, QVBoxLayout, QWidget
 from rclpy.qos import QoSProfile
 from rclpy.action import ActionClient
 from moveit_msgs.msg import RobotTrajectory
-from planning.srv import ConfirmPunch
+from speed_srv.srv import ConfirmPunch
+from builtin_interfaces.msg import Duration
 
 # Import your IKPlanner
 from planning.ik import IKPlanner
@@ -26,8 +27,8 @@ class UR7ePunch(Node):
         self.joint_sub = self.create_subscription(JointState, '/joint_states', self.joint_state_cb, qos)
         self.traj_vis_pub = self.create_publisher(RobotTrajectory, '/punch_trajectory_vis', 10)
 
-        self.pub_start = self.create_publisher(PoseStamped, "start_position", 10)
-        self.pub_end   = self.create_publisher(PoseStamped, "end_position", 10)
+        self.pub_start = self.create_publisher(PointStamped, "start_position", 10)
+        self.pub_end   = self.create_publisher(PointStamped, "end_position", 10)
 
         self.timer = self.create_timer(0.1, self.publish_positions)
 
@@ -96,7 +97,7 @@ class UR7ePunch(Node):
         position = np.array([pose.position.x, pose.position.y, pose.position.z])
         quat = [pose.orientation.x, pose.orientation.y, pose.orientation.z, pose.orientation.w]
         rot_matrix = R.from_quat(quat).as_matrix()
-        punch_dir = rot_matrix @ np.array([1, 0, 0])
+        punch_dir = rot_matrix @ np.array([0, 0, 1])
         punch_dir = punch_dir / np.linalg.norm(punch_dir)
 
         # approach behind target
@@ -181,12 +182,12 @@ class UR7ePunch(Node):
         # ----------------------------
         # 1) Scale timestamps
         # ----------------------------
+        
         for pt in traj.points:
             old_t = pt.time_from_start.sec + pt.time_from_start.nanosec * 1e-9
-            new_t = max(0.01, old_t / speed_multiplier)   # prevent 1ms issues
-
+            new_t = max(0.01, old_t / speed_multiplier)
             pt.time_from_start.sec = int(new_t)
-            pt.time_from_start.nanosec = int((new_t % 1.0) * 1e9)
+            pt.time_from_start.nanosec = int((new_t - int(new_t)) * 1e9)
 
         # ----------------------------
         # 2) Recompute velocities and accelerations

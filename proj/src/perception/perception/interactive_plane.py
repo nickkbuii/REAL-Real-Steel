@@ -42,10 +42,20 @@ class DraggableFistNode(Node):
         arrow.color.b = 0.0
         arrow.color.a = 1.0
 
+        # Rotate arrow so it faces along +Z instead of +X
+        arrow.pose.orientation.w = 0.707
+        arrow.pose.orientation.x = 0.0
+        arrow.pose.orientation.y = -0.707
+        arrow.pose.orientation.z = 0.0
+
+
         vis_ctrl = InteractiveMarkerControl()
         vis_ctrl.always_visible = True
+        vis_ctrl.orientation_mode = InteractiveMarkerControl.INHERIT
         vis_ctrl.markers.append(arrow)
         self.int_marker.controls.append(vis_ctrl)
+        vis_ctrl = InteractiveMarkerControl()
+
 
         # movement
         self.add_axis_control(self.int_marker, "move_x", InteractiveMarkerControl.MOVE_AXIS, 1.0, 0.0, 0.0)
