@@ -25,7 +25,8 @@ setup(
     entry_points={
         'console_scripts': [
             'serial_imu_bridge = imu_pipeline.serial_imu_bridge:main',
-            'ble_imu_bridge = imu_pipeline.ble_imu_bridge:main'
+            'ble_imu_bridge = imu_pipeline.ble_imu_bridge:main',
+            'punch = imu_pipeline.punch:main'
         ],
     },
 )
