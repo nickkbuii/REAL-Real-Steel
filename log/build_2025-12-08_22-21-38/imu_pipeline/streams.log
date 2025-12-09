@@ -1,0 +1,22 @@
+[0.726s] Invoking command in '/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/src/imu_pipeline': AMENT_PREFIX_PATH=/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/install/imu_filter_madgwick:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/install/imu_filter_madgwick LD_LIBRARY_PATH=/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/install/imu_filter_madgwick/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/imu_pipeline/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/install/imu_pipeline/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/imu_pipeline build --build-base /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/imu_pipeline/build install --record /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/imu_pipeline/install.log --single-version-externally-managed install_data
+[0.932s] running egg_info
+[0.933s] writing ../../build/imu_pipeline/imu_pipeline.egg-info/PKG-INFO
+[0.935s] writing dependency_links to ../../build/imu_pipeline/imu_pipeline.egg-info/dependency_links.txt
+[0.938s] writing entry points to ../../build/imu_pipeline/imu_pipeline.egg-info/entry_points.txt
+[0.940s] writing requirements to ../../build/imu_pipeline/imu_pipeline.egg-info/requires.txt
+[0.942s] writing top-level names to ../../build/imu_pipeline/imu_pipeline.egg-info/top_level.txt
+[0.950s] reading manifest file '../../build/imu_pipeline/imu_pipeline.egg-info/SOURCES.txt'
+[0.954s] writing manifest file '../../build/imu_pipeline/imu_pipeline.egg-info/SOURCES.txt'
+[0.955s] running build
+[0.955s] running build_py
+[0.958s] running install
+[0.959s] running install_lib
+[0.964s] running install_data
+[0.966s] running install_egg_info
+[0.969s] removing '/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/install/imu_pipeline/lib/python3.10/site-packages/imu_pipeline-0.0.0-py3.10.egg-info' (and everything under it)
+[0.975s] Copying ../../build/imu_pipeline/imu_pipeline.egg-info to /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/install/imu_pipeline/lib/python3.10/site-packages/imu_pipeline-0.0.0-py3.10.egg-info
+[1.003s] running install_scripts
+[1.033s] Installing ble_imu_bridge script to /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/install/imu_pipeline/lib/imu_pipeline
+[1.035s] Installing serial_imu_bridge script to /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/install/imu_pipeline/lib/imu_pipeline
+[1.038s] writing list of installed files to '/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/imu_pipeline/install.log'
+[1.053s] Invoked command in '/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/src/imu_pipeline' returned '0': AMENT_PREFIX_PATH=/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/install/imu_filter_madgwick:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/install/imu_filter_madgwick LD_LIBRARY_PATH=/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/install/imu_filter_madgwick/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/imu_pipeline/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/install/imu_pipeline/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/imu_pipeline build --build-base /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/imu_pipeline/build install --record /home/cc/ee106a/fa25/class/ee106a-abj/REAL-Real-Steel/build/imu_pipeline/install.log --single-version-externally-managed install_data
