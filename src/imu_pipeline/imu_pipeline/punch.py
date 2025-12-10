@@ -155,7 +155,7 @@ class IMUToUR7e(Node):
         )
 
         j1 = self.initial_j1 + clamp(shoulder_yaw, *UR7E_LIMITS["j1"])
-        j2 = self.initial_j2 + clamp(-shoulder_pitch, *UR7E_LIMITS["j2"])
+        j2 = self.initial_j2 + clamp(shoulder_pitch, *UR7E_LIMITS["j2"])
         j3 = self.initial_j3 + clamp(-elbow_flex, *UR7E_LIMITS["j3"])
         j4 = self.initial_j4
         j5 = self.initial_j5
