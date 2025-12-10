@@ -8,8 +8,8 @@
 #include "MPU6050.h"
 // #include "BLEManager.h"
 
-MPU6050 imuUpper(0x69);
-MPU6050 imuForearm(0x68);
+MPU6050 imuUpper(0x68);
+MPU6050 imuForearm(0x69);
 
 void setup() {
     Serial.begin(115200);
