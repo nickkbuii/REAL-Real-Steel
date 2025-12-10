@@ -3,7 +3,6 @@
 ROS2 node that:
 - Connects to the NanoESP32 over BLE
 - Receives IMU CSV data (12 floats, SI units)
-- Prints IMU values exactly like bluetooth.py
 - Publishes ROS2 Imu messages to:
       upper_imu/data_raw
       forearm_imu/data_raw
@@ -51,11 +50,6 @@ class ImuBleNode(Node):
          gx1, gy1, gz1,
          ax2, ay2, az2,
          gx2, gy2, gz2) = map(float, parts)
-
-        print(f"Upper IMU  a[m/s^2]=({ax1:.3f}, {ay1:.3f}, {az1:.3f})"
-              f"  w[rad/s]=({gx1:.3f}, {gy1:.3f}, {gz1:.3f})")
-        print(f"Forearm IMU a[m/s^2]=({ax2:.3f}, {ay2:.3f}, {az2:.3f})"
-              f"  w[rad/s]=({gx2:.3f}, {gy2:.3f}, {gz2:.3f})")
 
         self.pub_upper.publish(self.make_msg(ax1, ay1, az1, gx1, gy1, gz1, "upper_imu"))
         self.pub_fore.publish(self.make_msg(ax2, ay2, az2, gx2, gy2, gz2, "forearm_imu"))

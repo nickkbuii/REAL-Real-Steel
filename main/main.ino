@@ -1,7 +1,7 @@
 /**
  * @brief ESP32 main loop for dual-IMU orientation tracking.
  *
- * Reads two MPU6050 IMUs, sends both measurements via BLE.
+ * Reads two MPU6050 IMUs, sends both measurements via BLE or Serial.
  */
 
 #include <Arduino.h>
@@ -48,21 +48,21 @@ void loop() {
     imuForearm.readAccelms2(ax2, ay2, az2);
     imuForearm.readGyroRads(gx2, gy2, gz2);
 
-    Serial.print("ax1:"); Serial.print(ax1);
-    Serial.print(" ay1:"); Serial.print(ay1);
-    Serial.print(" az1:"); Serial.print(az1);
+    // Serial.print("ax1:"); Serial.print(ax1);
+    // Serial.print(" ay1:"); Serial.print(ay1);
+    // Serial.print(" az1:"); Serial.print(az1);
 
-    Serial.print(" gx1:"); Serial.print(gx1);
-    Serial.print(" gy1:"); Serial.print(gy1);
-    Serial.print(" gz1:"); Serial.print(gz1);
+    // Serial.print(" gx1:"); Serial.print(gx1);
+    // Serial.print(" gy1:"); Serial.print(gy1);
+    // Serial.print(" gz1:"); Serial.print(gz1);
 
-    Serial.print(" ax2:"); Serial.print(ax2);
-    Serial.print(" ay2:"); Serial.print(ay2);
-    Serial.print(" az2:"); Serial.print(az2);
+    // Serial.print(" ax2:"); Serial.print(ax2);
+    // Serial.print(" ay2:"); Serial.print(ay2);
+    // Serial.print(" az2:"); Serial.print(az2);
 
-    Serial.print(" gx2:"); Serial.print(gx2);
-    Serial.print(" gy2:"); Serial.print(gy2);
-    Serial.print(" gz2:"); Serial.println(gz2);
+    // Serial.print(" gx2:"); Serial.print(gx2);
+    // Serial.print(" gy2:"); Serial.print(gy2);
+    // Serial.print(" gz2:"); Serial.println(gz2);
 
     // updateBLEIMU(
     //     ax1, ay1, az1, gx1, gy1, gz1,

@@ -1,5 +1,13 @@
 #!/usr/bin/env python3
 
+"""
+ROS2 node that:
+- Subscribes to upper and forearm IMU messages
+- Computes arm joint angles
+- Publishes JointTrajectory messages to control a UR7e robot arm
+"""
+
+
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Imu, JointState
@@ -7,9 +15,6 @@ from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
 from scipy.spatial.transform import Rotation as R
 import numpy as np
 
-# ---------------------------------------------------
-# UR7e JOINT LIMITS (radians)
-# ---------------------------------------------------
 UR7E_LIMITS = {
     "j1": (-3.14, 3.14),
     "j2": (-3.14, 3.14),
@@ -21,7 +26,6 @@ UR7E_LIMITS = {
 
 def clamp(x, lo, hi):
     return max(lo, min(x, hi))
-
 
 class IMUToUR7e(Node):
     """
@@ -40,7 +44,6 @@ class IMUToUR7e(Node):
     def __init__(self):
         super().__init__('imu_to_ur7e')
 
-        # --- Subscribers ---
         self.upper_sub = self.create_subscription(
             Imu, '/upper_imu/data', self.upper_cb, 10)
         self.forearm_sub = self.create_subscription(
@@ -48,37 +51,28 @@ class IMUToUR7e(Node):
         self.joint_sub = self.create_subscription(
             JointState, '/joint_states', self.joint_state_cb, 10)
 
-        # --- Publisher ---
         self.pub = self.create_publisher(
             JointTrajectory,
             '/scaled_joint_trajectory_controller/joint_trajectory',
             10
         )
 
-        # IMU buffers
         self.upper_q = None
         self.forearm_q = None
 
-        # Calibration
         self.upper_q0 = None
         self.forearm_q0 = None
         self.calibrated = False
-        self.calib_samples = []   # list of (upper_q, forearm_q)
+        self.calib_samples = []
 
-        # Robot alive?
         self.joint_states_ready = False
-
-        # 50 Hz loop
         self.timer = self.create_timer(0.02, self.publish_robot_motion)
 
         self.get_logger().info(
-            "IMU → UR7e teleop (SciPy) started.\n"
-            ">>> HOLD RIGHT ARM STRAIGHT FORWARD FOR 3 SECONDS (CALIBRATION) <<<"
+            "IMU → UR7e teleop started.\n"
+            "HOLD RIGHT ARM STRAIGHT FORWARD FOR 3 SECONDS (CALIBRATION)"
         )
 
-    # -----------------------------
-    # Callbacks
-    # -----------------------------
     def joint_state_cb(self, msg: JointState):
         self.joint_states_ready = True
 
@@ -98,18 +92,14 @@ class IMUToUR7e(Node):
             msg.orientation.w,
         ])
 
-    # -----------------------------
-    # Compute human arm joint angles
-    # -----------------------------
+
     def compute_arm_angles(self):
         if self.upper_q is None or self.forearm_q is None:
             return None
 
-        # -------- 3-SECOND CALIBRATION --------
         if not self.calibrated:
             self.calib_samples.append((self.upper_q.copy(), self.forearm_q.copy()))
 
-            # 150 samples @ 50 Hz ≈ 3 seconds
             if len(self.calib_samples) >= 150:
                 uppers = np.array([u for (u, _) in self.calib_samples])
                 forearms = np.array([f for (_, f) in self.calib_samples])
@@ -125,7 +115,6 @@ class IMUToUR7e(Node):
 
             return None
 
-        # -------- Apply calibration --------
         upper_r_raw = R.from_quat(self.upper_q)
         forearm_r_raw = R.from_quat(self.forearm_q)
 
@@ -135,21 +124,16 @@ class IMUToUR7e(Node):
         upper_r = upper_r0.inv() * upper_r_raw
         forearm_r = forearm_r0.inv() * forearm_r_raw
 
-        # Shoulder angles
         roll_u, pitch_u, yaw_u = upper_r.as_euler('xyz')
         shoulder_yaw = yaw_u
         shoulder_pitch = pitch_u
 
-        # Elbow angle
         rel_r = upper_r.inv() * forearm_r
         _, pitch_rel, _ = rel_r.as_euler('xyz')
         elbow_flex = pitch_rel
 
         return shoulder_yaw, shoulder_pitch, elbow_flex
 
-    # -----------------------------
-    # Publish robot motion
-    # -----------------------------
     def publish_robot_motion(self):
         if not self.joint_states_ready:
             return
@@ -180,17 +164,12 @@ class IMUToUR7e(Node):
         pt = JointTrajectoryPoint()
         pt.positions = [j1, j2, j3, j4, j5, j6]
 
-        # UR controllers require >=1 second for the first point
         pt.time_from_start.sec = 1
         pt.time_from_start.nanosec = 0
 
         traj.points.append(pt)
         self.pub.publish(traj)
 
-
-# ---------------------------------------------------
-# MAIN
-# ---------------------------------------------------
 def main(args=None):
     rclpy.init(args=args)
     node = IMUToUR7e()
@@ -200,7 +179,6 @@ def main(args=None):
         pass
     node.destroy_node()
     rclpy.shutdown()
-
 
 if __name__ == '__main__':
     main()
