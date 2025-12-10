@@ -3,7 +3,6 @@
 
 #include <Arduino.h>
 #include <Wire.h>
-#include "EMAFilter.h"
 
 class MPU6050 {
 public:

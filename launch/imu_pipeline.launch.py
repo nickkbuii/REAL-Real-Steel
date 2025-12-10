@@ -43,8 +43,17 @@ def generate_launch_description():
         }]
     )
 
+    # Punching node (publishes joint angles to UR7e using quaternions)
+    punching_node = Node(
+        package='imu_pipeline',          
+        executable='punch',
+        name='punch',
+        output='screen',
+    )
+
     return LaunchDescription([
         serial_bridge,
         upper_filter,
-        forearm_filter
+        forearm_filter,
+        punching_node
     ])

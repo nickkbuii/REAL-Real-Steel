@@ -7,7 +7,6 @@ ROS2 node that:
 - Publishes JointTrajectory messages to control a UR7e robot arm
 """
 
-
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Imu, JointState
@@ -65,12 +64,20 @@ class IMUToUR7e(Node):
         self.calibrated = False
         self.calib_samples = []
 
+        self.initial_j1 = 4.726624011993408
+        self.initial_j2 = -1.8424164829649867
+        self.initial_j3 = -1.4260427951812744
+        self.initial_j4 = -1.3948713105968018
+        self.initial_j5 = 1.5788230895996094
+        self.initial_j6 = -3.1389945189105433
+
+
         self.joint_states_ready = False
-        self.timer = self.create_timer(0.02, self.publish_robot_motion)
+        self.timer = self.create_timer(0.1, self.publish_robot_motion)
 
         self.get_logger().info(
             "IMU → UR7e teleop started.\n"
-            "HOLD RIGHT ARM STRAIGHT FORWARD FOR 3 SECONDS (CALIBRATION)"
+            "HOLD RIGHT ARM STRAIGHT FORWARD FOR CALIBRATION"
         )
 
     def joint_state_cb(self, msg: JointState):
@@ -100,7 +107,7 @@ class IMUToUR7e(Node):
         if not self.calibrated:
             self.calib_samples.append((self.upper_q.copy(), self.forearm_q.copy()))
 
-            if len(self.calib_samples) >= 150:
+            if len(self.calib_samples) >= 10:
                 uppers = np.array([u for (u, _) in self.calib_samples])
                 forearms = np.array([f for (_, f) in self.calib_samples])
 
@@ -143,13 +150,16 @@ class IMUToUR7e(Node):
             return
 
         shoulder_yaw, shoulder_pitch, elbow_flex = angles
+        self.get_logger().info(
+            f"cmd angles: yaw={shoulder_yaw:.3f}, pitch={shoulder_pitch:.3f}, elbow={elbow_flex:.3f}"
+        )
 
-        j1 = clamp(shoulder_yaw, *UR7E_LIMITS["j1"])
-        j2 = clamp(-shoulder_pitch, *UR7E_LIMITS["j2"])
-        j3 = clamp(-elbow_flex, *UR7E_LIMITS["j3"])
-        j4 = 0.0
-        j5 = 0.0
-        j6 = 0.0
+        j1 = self.initial_j1 + clamp(shoulder_yaw, *UR7E_LIMITS["j1"])
+        j2 = self.initial_j2 + clamp(-shoulder_pitch, *UR7E_LIMITS["j2"])
+        j3 = self.initial_j3 + clamp(-elbow_flex, *UR7E_LIMITS["j3"])
+        j4 = self.initial_j4
+        j5 = self.initial_j5
+        j6 = self.initial_j6
 
         traj = JointTrajectory()
         traj.joint_names = [
@@ -164,8 +174,9 @@ class IMUToUR7e(Node):
         pt = JointTrajectoryPoint()
         pt.positions = [j1, j2, j3, j4, j5, j6]
 
-        pt.time_from_start.sec = 1
-        pt.time_from_start.nanosec = 0
+        pt.velocities = [0.0]*6
+        pt.time_from_start.sec = 0
+        pt.time_from_start.nanosec = 10 * (10**6)
 
         traj.points.append(pt)
         self.pub.publish(traj)
