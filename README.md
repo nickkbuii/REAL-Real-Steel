@@ -4,4 +4,3 @@
 ### To Run:
 #### 1) ros2 run ur7e_utils enable_comms
 #### 2) ros2 launch launch/imu_pipeline.launch.py
-#### 3) ros2 run imu_pipeline punch
