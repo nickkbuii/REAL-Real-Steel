@@ -7,20 +7,27 @@ ROS2 node that:
 - Publishes JointTrajectory messages to control a UR7e robot arm
 """
 
+"""
+ros2 service call /io_and_status_controller/set_speed_slider ur_msgs/srv/SetSpeedSliderFraction "{speed_slider_fraction: 0.3}
+"""
+
 import rclpy
 from rclpy.node import Node
 from sensor_msgs.msg import Imu, JointState
 from trajectory_msgs.msg import JointTrajectory, JointTrajectoryPoint
 from scipy.spatial.transform import Rotation as R
+from std_srvs.srv import Trigger
+from std_msgs.msg import Bool
+from geometry_msgs.msg import Vector3
 import numpy as np
 
 UR7E_LIMITS = {
     "j1": (-3.14, 3.14),
     "j2": (-3.14, 3.14),
     "j3": (-3.14, 3.14),
-    "j4": (-3.14, 3.14),
-    "j5": (-3.14, 3.14),
-    "j6": (-3.14, 3.14),
+    "j4": (-0.2, 0.2),
+    "j5": (-0.2, 0.2),
+    "j6": (-0.2, 0.2),
 }
 
 def clamp(x, lo, hi):
@@ -44,16 +51,26 @@ class IMUToUR7e(Node):
         super().__init__('imu_to_ur7e')
 
         self.upper_sub = self.create_subscription(
-            Imu, '/upper_imu/data', self.upper_cb, 10)
+            Imu, '/upper_imu/data', self.upper_cb, 1)
         self.forearm_sub = self.create_subscription(
-            Imu, '/forearm_imu/data', self.forearm_cb, 10)
+            Imu, '/forearm_imu/data', self.forearm_cb, 1)
         self.joint_sub = self.create_subscription(
-            JointState, '/joint_states', self.joint_state_cb, 10)
+            JointState, '/joint_states', self.joint_state_cb, 1)
+
+        self.hand_sub = self.create_subscription(
+            Bool, '/hand_open', self.hand_cb, 1)
+        self.current_hand = True
+
+        self.wrist_angle_sub = self.create_subscription(
+            Vector3, '/hand_wrist_angles', self.wrist_angle_cb, 1
+        )
+
+        self.gripper_cli = self.create_client(Trigger, '/toggle_gripper')
 
         self.pub = self.create_publisher(
             JointTrajectory,
             '/scaled_joint_trajectory_controller/joint_trajectory',
-            10
+            1
         )
 
         self.upper_q = None
@@ -71,6 +88,12 @@ class IMUToUR7e(Node):
         self.initial_j5 = 1.5788230895996094
         self.initial_j6 = -3.1389945189105433
 
+        # self.initial_j1 = -3.14
+        # self.initial_j2 = 0.0
+        # self.initial_j3 = 0.0
+        # self.initial_j4 = 1.6
+        # self.initial_j5 = -2.9
+        # self.initial_j6 = 4.69
 
         self.joint_states_ready = False
         self.timer = self.create_timer(0.1, self.publish_robot_motion)
@@ -99,6 +122,16 @@ class IMUToUR7e(Node):
             msg.orientation.w,
         ])
 
+    def hand_cb(self, msg: Bool): 
+        if msg.data != self.current_hand:
+            self.toggle_gripper()
+            self.current_hand = not self.current_hand
+            self.get_logger().info("Hand changed. Toggling Gripper")
+
+    def wrist_angle_cb(self, msg: Vector3):
+        self.wrist_yaw = msg.x
+        self.wrist_pitch = msg.y
+        self.wrist_roll = msg.z
 
     def compute_arm_angles(self):
         if self.upper_q is None or self.forearm_q is None:
@@ -141,6 +174,16 @@ class IMUToUR7e(Node):
 
         return shoulder_yaw, shoulder_pitch, elbow_flex
 
+    def toggle_gripper(self):
+        if not self.gripper_cli.wait_for_service(timeout_sec=5.0):
+            self.get_logger().error('Gripper service not available')
+            # rclpy.shutdown()
+            return
+        req = Trigger.Request()
+        future = self.gripper_cli.call_async(req)
+        rclpy.spin_until_future_complete(self, future, timeout_sec=0.5)
+        self.get_logger().info('Gripper toggled.')
+
     def publish_robot_motion(self):
         if not self.joint_states_ready:
             return
@@ -154,12 +197,18 @@ class IMUToUR7e(Node):
             f"cmd angles: yaw={shoulder_yaw:.3f}, pitch={shoulder_pitch:.3f}, elbow={elbow_flex:.3f}"
         )
 
+        self.get_logger().info(
+            f"wrist yaw={self.wrist_yaw:.3f}, wrist pitch={self.wrist_pitch:.3f}, wrist roll={self.wrist_roll:.3f}"
+            )
+
         j1 = self.initial_j1 + clamp(shoulder_yaw, *UR7E_LIMITS["j1"])
         j2 = self.initial_j2 + clamp(shoulder_pitch, *UR7E_LIMITS["j2"])
-        j3 = self.initial_j3 + clamp(-elbow_flex, *UR7E_LIMITS["j3"])
-        j4 = self.initial_j4
-        j5 = self.initial_j5
-        j6 = self.initial_j6
+        j3 = self.initial_j3 + clamp(elbow_flex, *UR7E_LIMITS["j3"])
+        j4 = self.initial_j4 + clamp(self.wrist_yaw, *UR7E_LIMITS["j4"])
+        j5 = self.initial_j5 + clamp(self.wrist_pitch, *UR7E_LIMITS["j5"])
+        j6 = self.initial_j6 + clamp(self.wrist_roll, *UR7E_LIMITS["j6"])
+
+        self.get_logger().info(f"{j4}, {j5}, {j6}")
 
         traj = JointTrajectory()
         traj.joint_names = [
@@ -176,7 +225,7 @@ class IMUToUR7e(Node):
 
         pt.velocities = [0.0]*6
         pt.time_from_start.sec = 0
-        pt.time_from_start.nanosec = 10 * (10**6)
+        pt.time_from_start.nanosec = 20 * (10**6)
 
         traj.points.append(pt)
         self.pub.publish(traj)

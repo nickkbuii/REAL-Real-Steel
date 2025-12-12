@@ -1,7 +1,42 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
+from launch.actions import IncludeLaunchDescription
+from launch.launch_description_sources import PythonLaunchDescriptionSource
+from ament_index_python.packages import get_package_share_directory
+import os
 
 def generate_launch_description():
+    # Get package info for usb cam and ros2_aruco
+    usb_cam_pkg = get_package_share_directory('usb_cam')
+    aruco_pkg = get_package_share_directory('ros2_aruco')
+
+    # Camera for hand and aruco detection
+    camera_launch = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(os.path.join(usb_cam_pkg, 'launch', 'camera.launch.py'))
+    )
+
+    # Publishes aruco poses
+    # aruco_launch = IncludeLaunchDescription(
+    #     PythonLaunchDescriptionSource(os.path.join(aruco_pkg, 'launch', 'aruco_recognition.launch.py'))
+    # )
+
+    # Determines transform between 2 aruco tags
+    # rrs_transform_node = Node(
+    #     package='rrs_transform',
+    #     executable='rrs_transform',
+    #     name='rrs_transform_node',
+    #     parameters=[{
+    #         'body_base_link_frame': 'ar_marker_1',
+    #         'body_tool_frame': 'ar_marker_10',
+    #     }]
+    # )
+
+    # Detects when hand is open or closed
+    clasp_detection_node = Node(
+        package='rrs_transform',
+        executable='clasp_detection',
+        name='clasp_detection_node'
+    )
 
     # Serial IMU bridge node (publishes raw IMU topics)
     serial_bridge = Node(
@@ -52,6 +87,10 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
+        camera_launch,
+        # aruco_launch,
+        # rrs_transform_node,
+        clasp_detection_node,
         serial_bridge,
         upper_filter,
         forearm_filter,
